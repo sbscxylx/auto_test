@@ -1,5 +1,6 @@
+import sys
+sys.path.append(r'C:\Users\Administrator\Desktop\AutomatedTesting')
 import os
-
 from Conf.readconfig import ReadConfig
 from Runner.send_email import send_email
 from Runner.test_runner import IEMSRunner

@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../AutomatedTesting')
+sys.path.append(r'C:\Users\Administrator\Desktop\AutomatedTesting')
 import unittest
 import os
 # from Comm.html_test_runner import HTMLTestRunner
