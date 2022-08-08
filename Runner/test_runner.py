@@ -1,9 +1,12 @@
 import sys
-sys.path.append(r'C:\Users\Administrator\Desktop\UIAutoTest')
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # 父路径的父路径
+
 from Runner.send_email import send_email
 from Conf.readconfig import ReadConfig
 import unittest
-import os
+
 import time
 from Comm import HTMLTestReportCN
 from Comm.html_test_runner import HTMLTestRunner

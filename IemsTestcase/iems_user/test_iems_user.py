@@ -17,7 +17,7 @@ class TestIEMSUser(unittest.TestCase):
     # databases = MysqlConn().read_all_databases()
     # backup_files = MysqlConn().backup_databases(databases,
     #                                             ['bar_container', 'mbr_consumer_config', 'mbr_consumer', 'mbr_cons_cntr_billing_scheme', 'mbr_inner_account'])
-    driver = Base('c')
+    # driver = Base('c')
     test_login_data = ReadData('test_login_data.xlsx').read_excel()
     test_user_data = ReadData('test_open_user_data.xlsx').read_excel()
     Logger().info(test_user_data)
@@ -33,8 +33,8 @@ class TestIEMSUser(unittest.TestCase):
         self.assertEqual(expect, actual)
 
     @classmethod
-    def setUpClass(cls):
-        pass
+    def setUpClass(self):
+        self.driver = Base('c')
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
@@ -161,7 +161,8 @@ class TestIEMSUser(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         # MysqlConn().restore_databases(cls.databases, cls.backup_files)
-        cls.driver.driver.quit()
+        driver = Base('c')
+        driver.driver.quit()
 
 
 if __name__ == '__main__':

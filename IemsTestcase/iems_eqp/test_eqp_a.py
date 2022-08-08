@@ -16,7 +16,7 @@ class TestIEMSEqp(unittest.TestCase):
     databases = MysqlConn().read_all_databases()
     # backup_files = MysqlConn().backup_databases(databases,
     #                                             ['bar_measure', 'bar_gateway', 'bar_building', 'bar_container'])
-    driver = Base('c')
+    # driver = Base('c')
     # file_path = os.path.abspath('../../IemsTestcase/Testdata/test_login_data.xlsx')
     # file_path = GetPath().get_abs_path('../Testdata/test_login_data.xlsx')
     # file_path = os.path.abspath(file_path)
@@ -40,8 +40,8 @@ class TestIEMSEqp(unittest.TestCase):
         self.assertEqual(str(eqpNo), actual)
 
     @classmethod
-    def setUpClass(cls):
-        pass
+    def setUpClass(self):
+        self.driver = Base('c')
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
@@ -299,7 +299,8 @@ class TestIEMSEqp(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         # MysqlConn().restore_databases(cls.databases, cls.backup_files)
-        cls.driver.driver.quit()
+        driver = Base('c')
+        driver.driver.quit()
 
 
 if __name__ == '__main__':

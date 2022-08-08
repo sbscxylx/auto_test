@@ -10,7 +10,7 @@ from IemsPage.iems_login.iems_login import IemsLogin
 class TestIEMSLogin(unittest.TestCase):
     """测试登录"""
 
-    driver = Base('c')
+    # driver = Base('c')
     # file_path = os.path.abspath('../../IemsTestcase/Testdata/test_login_data.xlsx')
     # file_path = GetPath().get_abs_path('../Testdata/test_login_data.xlsx')
     # file_path = os.path.abspath(file_path)
@@ -18,8 +18,8 @@ class TestIEMSLogin(unittest.TestCase):
     # print(test_login_data)
 
     @classmethod
-    def setUpClass(cls):
-        pass
+    def setUpClass(self):
+        self.driver = Base('c')
 
 
     def setUp(self) -> None:
@@ -49,7 +49,8 @@ class TestIEMSLogin(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        cls.driver.driver.quit()
+        driver = Base('c')
+        driver.driver.quit()
 
 
 if __name__ == '__main__':

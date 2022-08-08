@@ -2,6 +2,7 @@ import time
 import unittest
 import warnings
 import os
+
 from Comm.data import ReadData
 from Comm.mysql_backup import MysqlConn
 from IemsPage.basePage import *
@@ -16,10 +17,11 @@ class TestIEMSEqp(unittest.TestCase):
     databases = MysqlConn().read_all_databases()
     backup_files = MysqlConn().backup_databases(databases,
                                                 ['bar_measure', 'bar_gateway', 'bar_building', 'bar_container'])
-    driver = Base('c')
+
     # file_path = os.path.abspath('../../IemsTestcase/Testdata/test_login_data.xlsx')
     # file_path = GetPath().get_abs_path('../Testdata/test_login_data.xlsx')
     # file_path = os.path.abspath(file_path)
+    # driver = Base('c')
     test_login_data = ReadData('test_login_data.xlsx').read_excel()
     test_measure_data = ReadData('test_measure_data.xls').read_excel()
     test_project_data = ReadData('test_project_data.xlsx').read_excel()
@@ -40,11 +42,12 @@ class TestIEMSEqp(unittest.TestCase):
         self.assertEqual(str(eqpNo), actual)
 
     @classmethod
-    def setUpClass(cls):
-        pass
+    def setUpClass(self):
+        self.driver = Base('c')
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
+
 
     def test_01_import_gateway(self):
         """测试正常导入376网关"""
@@ -58,6 +61,7 @@ class TestIEMSEqp(unittest.TestCase):
         actual = self.driver.get_element(
             'x, //*[@id="pane-网关"]/div[3]/div[4]/div[2]/table/tbody/tr/td[2]/div/button[1]/span').text
         self.check_assert(actual, self.test_gateway_data[0]['智能网关编号'])
+
 
     def test_02_import_eqp(self):
         """测试正常导入表计"""
@@ -117,6 +121,7 @@ class TestIEMSEqp(unittest.TestCase):
         comm_type = self.driver.get_element('x, //*[@id="pane-电表"]/div[3]/div[3]/table/tbody/tr[1]/td[6]/div').text
         self.check_assert(comm_type, 'GPRS/4G')
 
+
     def test_03_connect_gateway(self):
         """测试关联网关"""
 
@@ -130,6 +135,7 @@ class TestIEMSEqp(unittest.TestCase):
             'x, //*[@id="pane-电表"]/div[3]/div[3]/table/tbody/tr[1]/td[5]/div/span').text
         Logger().info('成功关联网关'.format(gateway_no))
         self.assertNotEqual(gateway_no, '')
+
 
     def test_04_disconnect_gateway(self):
         """测试解绑网关"""
@@ -145,6 +151,7 @@ class TestIEMSEqp(unittest.TestCase):
             'x, //*[@id="pane-电表"]/div[3]/div[3]/table/tbody/tr[1]/td[5]/div/span').text
         Logger().info(gateway_no)
         self.assertEqual(gateway_no, '')
+
 
     def test_05_edit_bulid(self):
         """测试新增建筑"""
@@ -175,6 +182,7 @@ class TestIEMSEqp(unittest.TestCase):
         self.driver.wait_until('x, //*[@id="left"]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[2]/div/div[2]/div/div['
                                '1]/span[2]/span/span')
 
+
     def test_06_add_measure(self):
         """测试新增表计"""
 
@@ -188,6 +196,7 @@ class TestIEMSEqp(unittest.TestCase):
         bar_measure_no = self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[2]/div['
                                                  '2]/div[3]/table/tbody/tr/td[1]/div/div').text
         self.check_assert(bar_measure_no, self.test_measure_data[0]['测量表计编号'])
+
 
     def test_07_edit_measure(self):
         """测试修改表计"""
@@ -209,6 +218,7 @@ class TestIEMSEqp(unittest.TestCase):
         self.assertNotEqual(install_time_old, install_time_new)
         Logger().info('维护前安装时间{}, 维护后安装时间{}'.format(install_time_old, install_time_new))
 
+
     def test_08_unbind_measure(self):
         """测试解绑表计"""
 
@@ -229,6 +239,7 @@ class TestIEMSEqp(unittest.TestCase):
                                 '暂无数据')
         self.driver.action_chains('右键', 'x, //*[@id="left"]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[2]/div/div['
                                         '1]/span[2]/span/span')
+
 
     def test_09_delete_gateway(self):
         """删除网关"""
@@ -264,6 +275,7 @@ class TestIEMSEqp(unittest.TestCase):
         self.check_assert(bar_measure_new, '暂无数据')
         Logger().info('网关绑定表计{}已被删除'.format(self.test_measure_data[2]['测量表计编号']))
 
+
     def test_10_delete_measure(self):
         """删除表计"""
         #
@@ -298,7 +310,8 @@ class TestIEMSEqp(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         MysqlConn().restore_databases(cls.databases, cls.backup_files)
-        cls.driver.driver.quit()
+        driver = Base('c')
+        driver.driver.quit()
 
 
 if __name__ == '__main__':
