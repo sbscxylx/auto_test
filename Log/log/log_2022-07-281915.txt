@@ -1,0 +1,1769 @@
+2022-07-28 19:15:03,423 - Tester - log.py[line:47] - INFO - [{'mbrConsName': '发布回归', 'contacter': '联系人', 'contactMobile': 15000000000}]
+2022-07-28 19:15:03,423 - Tester - log.py[line:47] - INFO - [{'mbrConsName': '发布回归', 'contacter': '联系人', 'contactMobile': 15000000000}]
+2022-07-28 19:15:10,876 - Tester - log.py[line:47] - INFO - 2.3登录成功
+2022-07-28 19:15:10,876 - Tester - log.py[line:47] - INFO - 2.3登录成功
+2022-07-28 19:15:10,876 - Tester - log.py[line:47] - INFO - 2.3登录成功
+2022-07-28 19:15:12,552 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:12,552 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:12,552 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:12,552 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:12,553 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:12,553 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:12,553 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:12,553 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:12,553 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:13,630 - Tester - log.py[line:47] - INFO - 开始开户
+2022-07-28 19:15:13,630 - Tester - log.py[line:47] - INFO - 开始开户
+2022-07-28 19:15:13,630 - Tester - log.py[line:47] - INFO - 开始开户
+2022-07-28 19:15:13,630 - Tester - log.py[line:47] - INFO - 开始开户
+2022-07-28 19:15:13,630 - Tester - log.py[line:47] - INFO - 开始开户
+2022-07-28 19:15:13,630 - Tester - log.py[line:47] - INFO - 开始开户
+2022-07-28 19:15:17,483 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:17,483 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:17,483 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:17,483 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:17,483 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:17,483 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:17,483 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:17,765 - Tester - log.py[line:47] - INFO - 等待计费方案加载
+2022-07-28 19:15:17,765 - Tester - log.py[line:47] - INFO - 等待计费方案加载
+2022-07-28 19:15:17,765 - Tester - log.py[line:47] - INFO - 等待计费方案加载
+2022-07-28 19:15:17,765 - Tester - log.py[line:47] - INFO - 等待计费方案加载
+2022-07-28 19:15:17,765 - Tester - log.py[line:47] - INFO - 等待计费方案加载
+2022-07-28 19:15:17,765 - Tester - log.py[line:47] - INFO - 等待计费方案加载
+2022-07-28 19:15:17,765 - Tester - log.py[line:47] - INFO - 等待计费方案加载
+2022-07-28 19:15:17,765 - Tester - log.py[line:47] - INFO - 等待计费方案加载
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,806 - Tester - log.py[line:47] - INFO - 选择计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:18,818 - Tester - log.py[line:47] - INFO - 计费方案附加费否
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,723 - Tester - log.py[line:47] - INFO - 实际数据（表计底度错误会影响后续扣费，请仔细确认！）
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,724 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:22,774 - Tester - log.py[line:47] - INFO - 开户确认
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:25,897 - Tester - log.py[line:47] - INFO - 开户结束
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,925 - Tester - log.py[line:47] - INFO - 预期数据开户成功, 实际数据开户成功
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:26,926 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,719 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,720 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:29,721 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:30,766 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,890 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:31,935 - Tester - log.py[line:47] - INFO - 预期数据发布回归, 实际数据发布回归
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:33,029 - Tester - log.py[line:47] - INFO - 开始变更
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:34,244 - Tester - log.py[line:47] - INFO - 等待表计加载
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:41,183 - Tester - log.py[line:47] - INFO - 变更结束
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,223 - Tester - log.py[line:47] - INFO - 预期数据变更成功, 实际数据变更成功
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:42,224 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,040 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,041 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:45,042 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:46,093 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,240 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:47,294 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:50,059 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:51,173 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:58,115 - Tester - log.py[line:47] - INFO - 预期数据支付成功, 实际数据支付成功
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,390 - Tester - log.py[line:47] - INFO - 实际数据和达高科
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:15:59,391 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:02,232 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:03,348 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:04,449 - Tester - log.py[line:47] - INFO - 开始退款
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:07,290 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:08,631 - Tester - log.py[line:47] - INFO - 退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:09,650 - Tester - log.py[line:47] - INFO - 预期数据退款成功, 实际数据退款成功
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,451 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,452 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:12,454 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:14,568 - Tester - log.py[line:47] - INFO - 开始退租
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:15,747 - Tester - log.py[line:47] - INFO - 输入底度
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:17,163 - Tester - log.py[line:47] - INFO - 实际数据
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:21,253 - Tester - log.py[line:47] - INFO - 退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,286 - Tester - log.py[line:47] - INFO - 预期数据退租成功, 实际数据退租成功
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:22,288 - Tester - log.py[line:47] - INFO - 预期数据发布回归变更, 实际数据发布回归变更
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,057 - Tester - log.py[line:47] - INFO - 实际数据开户
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,058 - Tester - log.py[line:47] - INFO - 
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:25,060 - Tester - log.py[line:47] - INFO - 进入用户档案界面
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:26,128 - Tester - log.py[line:47] - INFO - 开始搜索发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:27,243 - Tester - log.py[line:47] - INFO - 查到发布回归
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据
+2022-07-28 19:16:28,271 - Tester - log.py[line:47] - INFO - 预期数据暂无数据, 实际数据暂无数据

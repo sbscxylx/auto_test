@@ -1,13 +1,12 @@
 import sys
-sys.path.append(r'C:\Users\Administrator\Desktop\AutomatedTesting')
+sys.path.append(r'C:\Users\Administrator\Desktop\UIAutoTest')
+from Runner.send_email import send_email
+from Conf.readconfig import ReadConfig
 import unittest
 import os
-# from Comm.html_test_runner import HTMLTestRunner
 import time
-
-from Comm import HTMLTestReportCN, HwTestReport
+from Comm import HTMLTestReportCN
 from Comm.html_test_runner import HTMLTestRunner
-from Runner import send_email
 
 
 class IEMSRunner:
@@ -66,3 +65,7 @@ class IEMSRunner:
 
 if __name__ == '__main__':
     IEMSRunner().runner()
+    file_path = ReadConfig().get_file_path('report_path')
+    file_name = os.listdir(file_path)[-1]
+    file = os.path.join(file_path, file_name)
+    send_email(file)

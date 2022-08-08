@@ -3,6 +3,7 @@
 # @Author  :lixin
 # @Email   :lix@bbieat.com
 # @File    :send_email.PY
+import os
 import time
 from email.header import Header
 from email.mime.application import MIMEApplication
@@ -10,7 +11,6 @@ from email.mime.multipart import MIMEMultipart
 import smtplib
 from email.mime.text import MIMEText
 import pathlib
-
 from Conf.readconfig import ReadConfig
 
 
@@ -24,7 +24,7 @@ def send_email(file=None):
 
     # 邮件服务器
     imapserver = 'smtp.163.com'
-    content = '自动化测试报告'
+    content = '---------------------------------------------' + '自动化测试报告' + '--------------------------------------'
 
     if file:
         msg = MIMEMultipart()
@@ -41,8 +41,8 @@ def send_email(file=None):
     else:
         msg = MIMEText(content)  # 邮件内容
     msg['Subject'] = '自动化测试报告'  # 邮件主题
-    msg['From'] = Header('测试机<{}>'.format(sender))  # 发送者账号
-    msg['To'] = Header('测试负责人<{}>'.format(receiver))  # 接收者账号列表
+    msg['From'] = Header('测试报告<{}>'.format(sender))  # 发送者账号
+    msg['To'] = receiver  # 接收者账号列表
     smtp = smtplib.SMTP(imapserver, port=25)
     smtp.login(sender, password)  # 登录
     smtp.sendmail(sender, receiver, msg.as_string())
@@ -51,7 +51,9 @@ def send_email(file=None):
 
 if __name__ == '__main__':
 
-    file_path = r'C:\Users\Administrator\Desktop\AutomatedTesting\Results\reports\iems-reports2022-02-21_09-59-23.html'
-    send_email(file_path)
+    file_path = ReadConfig().get_file_path('report_path')
+    file_name = os.listdir(file_path)[-1]
+    file = os.path.join(file_path, file_name)
+    send_email(file)
 
 

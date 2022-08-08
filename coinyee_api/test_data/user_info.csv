@@ -1,4 +1,0 @@
-method,url,params,data,json,code,assertion,expected_time
-get,/app/v2/Html5Controller/image_code,"{""app"":""iOS"",""key"":""BFEBA14D-04BD-42CD-8166-43E1B8663788"",""randomStr"":""8c71f3c12942b089416d249f398cba6d""}",,,,,0.5
-post,/app/v2/UserController/sign_in,,"{""account"":""18768173175"",""password"":""a1234567"",""applicationType"":""ios"",""imageCode"":""1234"",""key"":""BFEBA14D-04BD-42CD-8166-43E1B8663788"",""randomStr"":""8c71f3c12942b089416d249f398cba6d"",""lang"":""chinese"",""ipAddress"":""192.168.1.1""}",,200,2635811,0.5
-get,/app/v2/UserController/user_info/id/,,,,200,2635811,0.5

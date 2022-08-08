@@ -6,6 +6,7 @@ from IemsPage.basePage import *
 from IemsPage.iems_login.iems_login import IemsLogin
 
 
+@unittest.skip
 class TestIEMSLogin(unittest.TestCase):
     """测试登录"""
 

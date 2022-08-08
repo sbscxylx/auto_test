@@ -43,6 +43,10 @@ class ReadConfig:
         value = self.cf.get("email", option_name)
         return value
 
+    def get_log(self, option_name):
+        value = self.cf.get("log", option_name)
+        return value
+
     def get_all_options(self, section_name):
         value = self.cf.items(section_name)
         options_dict = {}

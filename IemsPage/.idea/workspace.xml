@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92cc3672-28ea-46ce-a3aa-8471a4d2e9a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Comm/mysql_backup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IemsTestcase/Testdata/test_measure_data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comm/HwTestReport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comm/compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Comm/ssh_conn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comm/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Comm/log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Conf/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../Conf/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Conf/readconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Conf/readconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/basePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iems_login/iems_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/iems_login/iems_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IemsTestcase/Testdata/test_login_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../IemsTestcase/Testdata/test_login_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IemsTestcase/iems_login/test_iems_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/../IemsTestcase/iems_login/test_iems_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_09-59-23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_11-21-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/iems_import_eqp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_11-34-46.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_11-53-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_11-55-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_14-47-04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_15-06-36.html" beforeDir="false" afterPath="$PROJECT_DIR$/iems_import_eqp/iems_import_eqp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_15-09-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/../IemsTestcase/iems_eqp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_15-16-07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_15-25-52.html" beforeDir="false" afterPath="$PROJECT_DIR$/../IemsTestcase/iems_eqp/test_eqp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_15-28-42.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_15-42-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_15-54-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_16-57-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_17-14-34.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_17-15-54.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Results/reports/iems-reports2022-02-21_17-30-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Runner/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Runner/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Runner/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Runner/send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Runner/test_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Runner/test_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api(1).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/.idea/coinyee_api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/Conf/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/Conf/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/Logs/2020-12-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/Assert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/Csv_Perpetual_Contract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/Csv_User.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/Logs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/Request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/Retrun_Response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/User_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/common/emails.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/run_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/test_case/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/test_case/test_perpetual_contract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/test_data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/test_data/perpetual_contract.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/test_data/pic_video/sugess_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/test_data/user_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/test_report/2020-11-19 17_16_37 test_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/test_report/2020-11-19 17_16_37 test_report.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coinyee_api/tuxing_code/code.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="29bbeZye087rIxesRAsgoZmVPbK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92cc3672-28ea-46ce-a3aa-8471a4d2e9a6" name="Default Changelist" comment="" />
+      <created>1653384828890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653384828890</updated>
+    </task>
+    <servers />
+  </component>
+</project>

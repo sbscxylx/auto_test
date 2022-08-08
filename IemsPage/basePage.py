@@ -1,5 +1,8 @@
 import csv
 import time
+
+from selenium.webdriver import ActionChains
+from Comm.log import Logger
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
@@ -66,24 +69,53 @@ class Base:
         time.sleep(second)
 
     def wait_until(self, selector, timeout=20, poll_frequency=0.2):
-        '''
+        """
         等待直达元素出现
         :param selector: 类似于'i,account'
         :param timeout: 超时时间
         :param poll_frequency: 使用方法间隔
         :return:
-        '''
+        """
         locator = self.selector_convert_to_locator(selector)
         method = EC.presence_of_element_located(locator)
         WebDriverWait(self.driver, timeout, poll_frequency).until(method)
 
-    def assert_text(self, selector, value, success_text='', failure_text=''):
+    def wait_play(self, selector,  timeout=20, poll_frequency=0.2):
+        """
+        等待元素可见
+        :param selector:
+        :param timeout:
+        :param poll_frequency:
+        :return:
+        """
         locator = self.selector_convert_to_locator(selector)
-        assert_text = EC.text_to_be_present_in_element_value(locator, value)
-        if assert_text:
-            print(success_text)
+        method = EC.visibility_of_element_located(locator)
+        WebDriverWait(self.driver, timeout, poll_frequency).until(method)
+
+    def wait_display(self, selector, timeout=20, poll_frequency=0.2):
+        """
+        等待直到元素消失
+        :param selector:
+        :param timeout:
+        :param poll_frequency:
+        :return:
+        """
+
+        locator = self.selector_convert_to_locator(selector)
+        method = EC.invisibility_of_element_located(locator)
+        WebDriverWait(self.driver, timeout, poll_frequency).until(method)
+
+    def assert_text(self, selector, value, success_text='', failure_text=''):
+        flag = True
+        element_text = self.get_element(selector).text
+        Logger().info('实际数据{}'.format(element_text))
+        if element_text == value:
+            Logger().info(success_text)
         else:
+            flag = False
             print(failure_text)
+        return flag
+
 
     def switch_to_frame(self, selector):
         element = self.get_element(selector)
@@ -127,6 +159,31 @@ class Base:
 
     def alert_dismiss(self):
         self.driver.switch_to.alert.dismiss()
+
+    def move_to_click(self, selector):
+        element = self.get_element(selector)
+        time.sleep(1)
+        self.driver.execute_script('arguments[0].click();', element)
+
+    def element_existance(self, selector):
+        """
+        判断元素是否存在
+        :param selector:
+        :return:
+        """
+        element_existance = True
+        try:
+            element = self.get_element(selector)
+        except:
+            element_existance = False
+        return element_existance
+
+    def action_chains(self, action, selector):
+        element = self.get_element(selector)
+        if action == '右键':
+            ActionChains(self.driver).context_click(element).perform()
+        if action == '左键':
+            ActionChains(self.driver).click(element).perform()
 
 
 
