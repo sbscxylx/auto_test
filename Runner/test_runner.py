@@ -14,7 +14,7 @@ from Comm.html_test_runner import HTMLTestRunner
 
 class IEMSRunner:
 
-    def runner(self):
+    def runner(self, selector='sit'):
         """收集并运行用例"""
 
         # 实例化 TestSuite 类，创建测试套件
@@ -24,7 +24,9 @@ class IEMSRunner:
         dir = '../IemsTestcase'  # 相对路径
 
         # suite.addTests(unittest.TestLoader().discover(start_dir=dir,pattern='se1112_case1.py'))
-        suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*.py'))
+        if selector == 'sit':
+            # suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*sit.py'))
+            suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test_iems_user_sit.py'))
 
         # 创建报告文件,b是二进制
         t = time.strftime('%Y-%m-%d_%H-%M-%S')
@@ -71,4 +73,4 @@ if __name__ == '__main__':
     file_path = ReadConfig().get_file_path('report_path')
     file_name = os.listdir(file_path)[-1]
     file = os.path.join(file_path, file_name)
-    send_email(file)
+    # send_email(file)

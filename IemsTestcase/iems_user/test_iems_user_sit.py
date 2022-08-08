@@ -2,6 +2,9 @@ import time
 import unittest
 import warnings
 import os
+
+import self
+
 from Comm.data import ReadData
 from Comm.mysql_backup import MysqlConn
 from IemsPage.basePage import *
@@ -33,8 +36,8 @@ class TestIEMSUser(unittest.TestCase):
         self.assertEqual(expect, actual)
 
     @classmethod
-    def setUpClass(self):
-        self.driver = Base('c')
+    def setUpClass(cls):
+        cls.driver = Base('c')
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
@@ -123,7 +126,6 @@ class TestIEMSUser(unittest.TestCase):
         self.check_assert(actual, '退款成功')
 
 
-
     def test_05_exit_user(self):
         """测试退租"""
         # IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
@@ -161,8 +163,8 @@ class TestIEMSUser(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         # MysqlConn().restore_databases(cls.databases, cls.backup_files)
-        driver = Base('c')
-        driver.driver.quit()
+        cls.driver.driver.quit()
+
 
 
 if __name__ == '__main__':

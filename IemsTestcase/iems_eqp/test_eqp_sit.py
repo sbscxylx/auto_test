@@ -42,8 +42,8 @@ class TestIEMSEqp(unittest.TestCase):
         self.assertEqual(str(eqpNo), actual)
 
     @classmethod
-    def setUpClass(self):
-        self.driver = Base('c')
+    def setUpClass(cls):
+        cls.driver = Base('c')
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
@@ -310,8 +310,7 @@ class TestIEMSEqp(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         MysqlConn().restore_databases(cls.databases, cls.backup_files)
-        driver = Base('c')
-        driver.driver.quit()
+        cls.driver.driver.quit()
 
 
 if __name__ == '__main__':
