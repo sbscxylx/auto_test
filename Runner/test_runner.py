@@ -1,12 +1,9 @@
 import sys
 import os
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # 父路径的父路径
-
 from Runner.send_email import send_email
 from Conf.readconfig import ReadConfig
 import unittest
-
 import time
 from Comm import HTMLTestReportCN
 from Comm.html_test_runner import HTMLTestRunner
@@ -27,6 +24,12 @@ class IEMSRunner:
         if selector == 'sit':
             # suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*sit.py'))
             suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test_iems_user_sit.py'))
+        if selector == 'a':
+            # suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*sit.py'))
+            suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*a.py'))
+        if selector == 'all':
+            # suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*sit.py'))
+            suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*.py'))
 
         # 创建报告文件,b是二进制
         t = time.strftime('%Y-%m-%d_%H-%M-%S')
