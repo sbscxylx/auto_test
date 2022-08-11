@@ -1,8 +1,5 @@
-import time
 import unittest
 import warnings
-import os
-
 from Comm.data import ReadData
 from Comm.mysql_backup import MysqlConn
 from IemsPage.basePage import *

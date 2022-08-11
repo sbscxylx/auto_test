@@ -25,6 +25,7 @@ class IemsLogin(BasePage):
         if driver.element_existance('x, //*[@class="el-dialog__body"]'):
             self.driver.wait_until('x, //*[@class="el-dialog__body"]//button')
             driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+        driver.wait_clickable('x, //*[@class="el-dialog__body"]//button')
         Logger().info('2.0登录成功')
         sleep(1)
 
@@ -42,7 +43,9 @@ class IemsLogin(BasePage):
         if driver.element_existance('x, //*[@class="el-dialog__body"]'):
             self.driver.wait_until('x, //*[@class="el-dialog__body"]//button')
             driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+        driver.wait_clickable('x, //*[@class="el-dialog__body"]//button')
         Logger().info('2.3登录成功')
+        sleep(1)
 
 
     def a_login_old(self, user, pwd, url=a_url_old):
@@ -58,6 +61,7 @@ class IemsLogin(BasePage):
         if driver.element_existance('x, //*[@class="el-dialog__body"]'):
             self.driver.wait_until('x, //*[@class="el-dialog__body"]//button')
             driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+        driver.wait_clickable('x, //*[@class="el-dialog__body"]//button')
         Logger().info('2.0登录成功')
         sleep(1)
 
@@ -76,7 +80,9 @@ class IemsLogin(BasePage):
             self.driver.wait_until('x, //*[@class="el-dialog__body"]//button')
             driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div[3]/div/div[1]')
+        driver.wait_clickable('x, //*[@class="el-dialog__body"]//button')
         Logger().info('2.3登录成功')
+        sleep(1)
 
 
 if __name__ == '__main__':

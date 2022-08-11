@@ -15,11 +15,18 @@ class Base:
 
     def __init__(self, browser):
         if browser == 'chrome' or browser == 'c':
-            self.driver = webdriver.Chrome()
+
+            options = webdriver.ChromeOptions()
+            options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            self.driver = webdriver.Chrome(options=options)
+
         elif browser == 'firefox' or browser == 'f':
-            self.driver = webdriver.Firefox()
+            options = webdriver.FirefoxOptions()
+            self.driver = webdriver.Firefox(options=options)
         elif browser == 'ie' or browser == 'i':
-            self.driver = webdriver.Ie()
+            options = webdriver.IeOptions()
+            options.add_additional_option('excludeSwitches', ['enable-logging'])
+            self.driver = webdriver.Ie(options=options)
         else:
             raise Exception('输入正确的浏览器！')
 
@@ -105,6 +112,20 @@ class Base:
         method = EC.invisibility_of_element_located(locator)
         WebDriverWait(self.driver, timeout, poll_frequency).until(method)
 
+    def wait_clickable(self, selector, timeout=20, poll_frequency=0.2):
+        """
+        等待直到元素消失
+        :param selector:
+        :param timeout:
+        :param poll_frequency:
+        :return:
+        """
+
+        locator = self.selector_convert_to_locator(selector)
+        method = EC.element_to_be_clickable(locator)
+        WebDriverWait(self.driver, timeout, poll_frequency).until_not(method)
+
+
     def assert_text(self, selector, value, success_text='', failure_text=''):
         flag = True
         element_text = self.get_element(selector).text
@@ -177,6 +198,7 @@ class Base:
         except:
             element_existance = False
         return element_existance
+
 
     def action_chains(self, action, selector):
         element = self.get_element(selector)

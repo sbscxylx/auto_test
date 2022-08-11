@@ -1,5 +1,7 @@
 import sys
 import os
+import pytest
+# sys.path.append(os.getcwd())
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # 父路径的父路径
 from Runner.send_email import send_email
 from Conf.readconfig import ReadConfig
@@ -10,6 +12,7 @@ from Comm.html_test_runner import HTMLTestRunner
 
 
 class IEMSRunner:
+
 
     def runner(self, selector='sit'):
         """收集并运行用例"""
@@ -44,7 +47,8 @@ class IEMSRunner:
         #                                  title='iems系统自动化测试报告',
         #                                  description='报告详细描述',
         #                                  verbosity=2)
-
+        # pytest.
+        #
         a = HTMLTestReportCN.HTMLTestReportCN(stream=report_file,
                                               title='iems系统自动化测试报告',
                                               description='报告详细描述',
@@ -61,7 +65,7 @@ class IEMSRunner:
         # 运行用例
         # htm_test_runner.run(suite)
         a.run(suite)
-
+        #
         # 关闭报告文件，如果不关闭有可能会导致报告内容为空
         report_file.close()
 
@@ -69,11 +73,17 @@ class IEMSRunner:
         # attachfilepath = report_path
         # send_email(content=content)
         # print('报告出现fail，请查看邮件！')
+        # pytest.main()
+        # return suite
+
 
 
 if __name__ == '__main__':
-    IEMSRunner().runner()
+    # IEMSRunner().runner()
+    # pytest.main([*cases, "-v"])
+    s = IEMSRunner().runner()
     file_path = ReadConfig().get_file_path('report_path')
     file_name = os.listdir(file_path)[-1]
     file = os.path.join(file_path, file_name)
     # send_email(file)
+    print(s)
