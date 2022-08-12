@@ -107,7 +107,7 @@ class IEMSEquipment(BasePage):
             self.driver.wait_play(timeout=120, selector='x, //*[@id="pane-网关"]/div[3]/div[8]')
             # if self.driver.assert_text('x, //body/div[last()]/p', '数据文件上传成功'):
             #     self.driver.get_element('x, //*[@id="tab-网关"]').click()
-            self.driver.wait_display('x, //*[@id="pane-网关"]/div[3]/div[8]')
+            self.driver.wait_display(timeout=120, selector='x, //*[@id="pane-网关"]/div[3]/div[8]')
             sleep(1)
         Logger().info('导入设备成功')
 
@@ -146,7 +146,7 @@ class IEMSEquipment(BasePage):
             # self.driver.wait_play(timeout=60, selector='x, //*[@id="pane-网关"]/div[3]/div[8]')
             # if self.driver.assert_text('x, //body/div[last()]/p', '数据文件上传成功'):
             #     self.driver.get_element('x, //*[@id="tab-网关"]').click()
-            self.driver.wait_display('x, //*[@id="pane-网关"]/div[3]/div[8]')
+            self.driver.wait_display(timeout=120, selector='x, //*[@id="pane-网关"]/div[3]/div[8]')
             sleep(1)
         Logger().info('导入设备成功')
 
