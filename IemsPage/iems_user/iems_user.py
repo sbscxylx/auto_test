@@ -23,6 +23,8 @@ class IEMSUser(BasePage):
             else:
                 self.driver.move_to_click('x, //body/div[last()]/div/div/ul/li[1]')
                 self.driver.get_element('x, //*[@id="project-container"]').send_keys(projectName)
+        time.sleep(1)
+
 
 
     def enter_user(self):

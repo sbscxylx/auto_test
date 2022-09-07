@@ -32,15 +32,15 @@ class TestIEMSEqp(unittest.TestCase):
     Logger().info(test_project_data)
     Logger().info(test_gateway_data)
 
-    def check_assert(self, actual, eqpNo):
+    def check_assert(self, actual, expect):
         """
         确认数据是否导入
         :param actual:
-        :param eqpNo:
+        :param expect:
         :return:
         """
-        Logger().info('预期数据{}, 实际数据{}'.format(eqpNo, actual))
-        self.assertEqual(str(eqpNo), actual)
+        Logger().info('预期数据{}, 实际数据{}'.format(expect, actual))
+        self.assertEqual(str(expect), actual)
 
     @classmethod
     def setUpClass(cls):

@@ -23,7 +23,7 @@ class MysqlConn():
         self.mysql_host = ReadConfig().get_sit_mysql('mysql_host')
         self.mysql_db = ReadConfig().get_sit_mysql('mysql_db')
         # self.disabled_databases = ReadConfig().get_sit_mysql('disabled_databases')
-        self.disabled_databases = {'information_schema', 'mysql', 'nacos', 'performance_schema', 'sys', 'xxl_job'}
+        self.disabled_databases = {'information_schema', 'mysql', 'nacos', 'performance_schema', 'sys', 'xxl_job', 'vx_api_gateway'}
         self.backup_path = 'backup'
 
 

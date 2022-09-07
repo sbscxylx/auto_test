@@ -1,7 +1,6 @@
 import csv
-import time
-
-from selenium.webdriver import ActionChains
+import time, datetime
+from selenium.webdriver import ActionChains, Keys
 from Comm.log import Logger
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -31,15 +30,20 @@ class Base:
             raise Exception('输入正确的浏览器！')
 
     def open_url(self, url):
+        """
+        打开网址
+        :param url:请求链接
+        :return:
+        """
         self.driver.get(url)
         self.driver.maximize_window()
 
     def selector_convert_to_locator(self, selector):
-        '''
+        """
         把selector转换成定位元素的locator
         :param selector: 类似于'i,account'
         :return: locator元组。类似于(By.ID,account)
-        '''
+        """
         selector_key = selector.split(',')[0]
         selector_value = selector.split(',')[1]
         if selector_key == 'id' or selector_key == 'i':
@@ -63,17 +67,52 @@ class Base:
         return locator
 
     def get_element(self, selector):
-        '''
+        """
         找单个元素
         :param selector: 类似于'i,account'
         :return: 网页元素
-        '''
+        """
         locator = self.selector_convert_to_locator(selector)
         element = self.driver.find_element(*locator)
         return element
 
+    def clear_and_input(self, selector, value):
+        """
+        清空文本再输入
+        :param selector:
+        :param value:
+        :return:
+        """
+
+        self.get_element(selector).clear()
+        self.get_element(selector).send_keys(value)
+
+
     def sleep(self, second):
+        """
+        等待
+        :param second:秒
+        :return:
+        """
         time.sleep(second)
+
+    def date_day(self, symbol='minus', index=0):
+        """
+        日期获取
+        :param symbol: [minus,plus]
+        :param index: 天数
+        :return:
+        """
+
+        if symbol == 'minus':
+            time = (datetime.datetime.now() - datetime.timedelta(days=index)).strftime("%Y-%m-%d")
+            Logger().info(time)
+            return time
+
+        if symbol == 'plus':
+            time = (datetime.datetime.now() + datetime.timedelta(days=index)).strftime("%Y-%m-%d")
+            Logger().info(time)
+            return time
 
     def wait_until(self, selector, timeout=20, poll_frequency=0.2):
         """
@@ -87,7 +126,7 @@ class Base:
         method = EC.presence_of_element_located(locator)
         WebDriverWait(self.driver, timeout, poll_frequency).until(method)
 
-    def wait_play(self, selector,  timeout=20, poll_frequency=0.2):
+    def wait_play(self, selector, timeout=20, poll_frequency=0.2):
         """
         等待元素可见
         :param selector:
@@ -114,7 +153,7 @@ class Base:
 
     def wait_clickable(self, selector, timeout=20, poll_frequency=0.2):
         """
-        等待直到元素消失
+        等待直到元素可点击
         :param selector:
         :param timeout:
         :param poll_frequency:
@@ -123,7 +162,21 @@ class Base:
 
         locator = self.selector_convert_to_locator(selector)
         method = EC.element_to_be_clickable(locator)
-        WebDriverWait(self.driver, timeout, poll_frequency).until_not(method)
+        WebDriverWait(self.driver, timeout, poll_frequency).until(method)
+
+    def isPresent(self, selector):
+        """
+        可见的元素返回True;不存在的元素/隐藏的元素返回False
+        :param selector:
+        :return:
+        """
+
+        try:
+            self.get_element(selector)
+            return True
+        except:
+            return False
+
 
 
     def assert_text(self, selector, value, success_text='', failure_text=''):
@@ -137,40 +190,50 @@ class Base:
             print(failure_text)
         return flag
 
+    def text_in(self, selector, value):
+        flag = True
+        element_text = self.get_element(selector).text
+        Logger().info('实际数据{}'.format(element_text))
+        if value in element_text:
+            Logger().info(value + '数据存在')
+        else:
+            flag = False
+            Logger().info(value + '数据不存在')
+        return flag
 
     def switch_to_frame(self, selector):
         element = self.get_element(selector)
         self.driver.switch_to.frame(element)
 
     def select_by_index(self, selector, index):
-        '''
+        """
         根据index定位select下拉框中的元素
         :param selector: 类似于'i,account'
         :param index: 下拉框中的元素序号
         :return:
-        '''
+        """
         element = self.get_element(selector)
         select = Select(element)
         select.select_by_index(int(index))
 
     def select_by_visible_text(self, selector, text):
-        '''
+        """
         根据元素文本中包含的文本，获取下拉框中的元素
         :param selector: 类似于'i,account'
         :param text: 下拉框中元素文本中包含的文本
         :return:
-        '''
+        """
         element = self.get_element(selector)
         select = Select(element)
         select.select_by_visible_text(text)
 
     def select_by_value(self, selector, value):
-        '''
+        """
         根据元素文本中包含的文本，获取下拉框中的元素
         :param selector: 类似于'i,account'
         :param value: 下拉框中元素的value值
         :return:
-        '''
+        """
         element = self.get_element(selector)
         select = Select(element)
         select.select_by_value(value)
@@ -182,6 +245,11 @@ class Base:
         self.driver.switch_to.alert.dismiss()
 
     def move_to_click(self, selector):
+        """
+        强制点击
+        :param selector:
+        :return:
+        """
         element = self.get_element(selector)
         time.sleep(1)
         self.driver.execute_script('arguments[0].click();', element)
@@ -194,19 +262,28 @@ class Base:
         """
         element_existance = True
         try:
-            element = self.get_element(selector)
+            self.get_element(selector)
         except:
             element_existance = False
         return element_existance
 
-
     def action_chains(self, action, selector):
+        """
+        鼠标操作
+        :param action: ['左键', '右键']
+        :param selector:
+        :return:
+        """
         element = self.get_element(selector)
         if action == '右键':
             ActionChains(self.driver).context_click(element).perform()
         if action == '左键':
             ActionChains(self.driver).click(element).perform()
 
+    def keys_control(self, selector, keys):
+
+        if keys == 'enter':
+            self.get_element(selector).send_keys(Keys.ENTER)
 
 
 class BasePage:

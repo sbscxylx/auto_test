@@ -1,5 +1,4 @@
 from time import sleep
-from Conf.readconfig import ReadConfig
 from Comm.log import Logger
 from IemsPage.basePage import BasePage, Base
 
@@ -164,7 +163,7 @@ class IEMSEquipment(BasePage):
         sleep(1)
         self.driver.get_element('x, //body/div[last()]/div/div/button').click()
         Logger().info('查到{}'.format(index))
-
+        sleep(1)
 
     def select_eqp(self, type, eqpNo):
         """
