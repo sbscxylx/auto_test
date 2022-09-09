@@ -273,13 +273,12 @@ class IEMSEquipment(BasePage):
         """
 
         self.driver.wait_until('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/div')
-        if self.driver.assert_text('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div['
-                                   '1]/div/li/div', '项目信息'):
+        if self.driver.get_element('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul').is_displayed():
             self.driver.get_element(
                 'x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div[1]/div/li/div').click()
         else:
             self.driver.get_element('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/div').click()
-        self.driver.wait_until('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div[1]/div/li/div')
+        self.driver.wait_play('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div[1]/div/li/div')
         self.driver.move_to_click('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div[1]/div/li/div')
         self.driver.wait_until('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div[1]/div/li/ul/div['
                                '1]/li/span')

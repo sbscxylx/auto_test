@@ -21,20 +21,23 @@ class IemsLogin(BasePage):
         driver.get_element('x, //*[@id="app"]/div/form/div[3]/div/div/input').send_keys(pwd)
         driver.wait_until('x, //*[@id="app"]/div/form/div[5]/div/button/span/span')
         driver.get_element('x, //*[@id="app"]/div/form/div[5]/div/button/span/span').click()
-        sleep(2)
-        if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
-            driver.wait_until('x, //*[@class="el-dialog__body"]//button')
-            while True:
-                try:
-                    driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
-                    driver.wait_display('x, /html/body/div[3]')
-                except:
-                    time.sleep(2)
-                    driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
-                    driver.wait_display('x, /html/body/div[3]')
-                break
+        try:
+            self.driver.wait_until(timeout=5, selector='x, //*[@class="el-dialog__body"]//button')
+            if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
+                driver.wait_until('x, //*[@class="el-dialog__body"]//button')
+                while True:
+                    try:
+                        driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+                        driver.wait_display('x, /html/body/div[3]')
+                    except:
+                        driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+                        driver.wait_display('x, /html/body/div[3]')
+                    break
+        except:
+            pass
         Logger().info('2.0登录成功')
         sleep(1)
+
 
 
     def iems_login_new(self, user, pwd, url=sit_url_new):
@@ -46,19 +49,21 @@ class IemsLogin(BasePage):
         driver.get_element('x, //*[@id="app"]/div/div[2]/form/div[3]/div/div/input').send_keys(pwd)
         driver.wait_until('x, //*[@id="app"]/div/div[2]/form/div[5]/div/button')
         driver.get_element('x, //*[@id="app"]/div/div[2]/form/div[5]/div/button').click()
-        sleep(2)
-        if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
-            driver.wait_until('x, //*[@class="el-dialog__body"]//button')
-            while True:
-                try:
-                    driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
-                    driver.wait_display('x, /html/body/div[3]')
-                except:
-                    time.sleep(2)
-                    driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
-                    driver.wait_display('x, /html/body/div[3]')
-                break
-        Logger().info('2.3登录成功')
+        try:
+            self.driver.wait_until(timeout=5, selector='x, //*[@class="el-dialog__body"]//button')
+            if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
+                driver.wait_until('x, //*[@class="el-dialog__body"]//button')
+                while True:
+                    try:
+                        driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+                        driver.wait_display('x, /html/body/div[3]')
+                    except:
+                        driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+                        driver.wait_display('x, /html/body/div[3]')
+                    break
+        except:
+            pass
+        Logger().info('2.0登录成功')
         sleep(1)
 
 
@@ -71,18 +76,20 @@ class IemsLogin(BasePage):
         driver.get_element('x, //*[@id="app"]/div/form/div[3]/div/div/input').send_keys(pwd)
         driver.wait_until('x, //*[@id="app"]/div/form/div[5]/div/button/span/span')
         driver.get_element('x, //*[@id="app"]/div/form/div[5]/div/button/span/span').click()
-        sleep(2)
-        if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
-            driver.wait_until('x, //*[@class="el-dialog__body"]//button')
-            while True:
-                try:
-                    driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
-                    driver.wait_display('x, /html/body/div[3]')
-                except:
-                    time.sleep(2)
-                    driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
-                    driver.wait_display('x, /html/body/div[3]')
-                break
+        try:
+            self.driver.wait_until(timeout=5, selector='x, //*[@class="el-dialog__body"]//button')
+            if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
+                driver.wait_until('x, //*[@class="el-dialog__body"]//button')
+                while True:
+                    try:
+                        driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+                        driver.wait_display('x, /html/body/div[3]')
+                    except:
+                        driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+                        driver.wait_display('x, /html/body/div[3]')
+                    break
+        except:
+            pass
         Logger().info('2.0登录成功')
         sleep(1)
 
@@ -96,19 +103,21 @@ class IemsLogin(BasePage):
         driver.get_element('x, //*[@id="app"]/div/div[2]/form/div[3]/div/div/input').send_keys(pwd)
         driver.wait_until('x, //*[@id="app"]/div/div[2]/form/div[5]/div/button')
         driver.get_element('x, //*[@id="app"]/div/div[2]/form/div[5]/div/button').click()
-        sleep(2)
-        if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
-            driver.wait_until('x, //*[@class="el-dialog__body"]//button')
-            while True:
-                try:
-                    driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
-                    driver.wait_display('x, /html/body/div[3]')
-                except:
-                    time.sleep(2)
-                    driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
-                    driver.wait_display('x, /html/body/div[3]')
-                break
-        Logger().info('2.3登录成功')
+        try:
+            self.driver.wait_until(timeout=5, selector='x, //*[@class="el-dialog__body"]//button')
+            if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
+                driver.wait_until('x, //*[@class="el-dialog__body"]//button')
+                while True:
+                    try:
+                        driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+                        driver.wait_display('x, /html/body/div[3]')
+                    except:
+                        driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
+                        driver.wait_display('x, /html/body/div[3]')
+                    break
+        except:
+            pass
+        Logger().info('2.0登录成功')
         sleep(1)
 
 

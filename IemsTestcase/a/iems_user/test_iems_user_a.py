@@ -16,15 +16,16 @@ from IemsPage.iems_user.iems_user import IEMSUser
 class TestIEMSUser(unittest.TestCase):
     """测试档案相关"""
 
-    Logger().rm_log()
+
     # databases = MysqlConn().read_all_databases()
     # backup_files = MysqlConn().backup_databases(databases,
     #                                             ['bar_container', 'mbr_consumer_config', 'mbr_consumer', 'mbr_cons_cntr_billing_scheme', 'mbr_inner_account'])
-    # driver = Base('c')
+
     test_login_data = ReadData('test_login_data.xlsx').read_excel()
     test_user_data = ReadData('test_open_user_data.xlsx').read_excel()
     test_project_data = ReadData('test_project_data.xlsx').read_excel()
     Logger().info(test_user_data)
+    driver = Base('c')
 
     def check_assert(self, actual, expect):
         """
@@ -38,11 +39,12 @@ class TestIEMSUser(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = Base('c')
+        Logger().rm_log()
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
 
+    @Screen(driver)
     @allure.story('用户档案')
     @allure.title('测试a用户开户')
     def test_01_open_user(self):
@@ -78,6 +80,7 @@ class TestIEMSUser(unittest.TestCase):
             print(mbrConsName)
             self.check_assert(mbrConsName, self.test_user_data[0]['mbrConsName'])
 
+    @Screen(driver)
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story('用户档案')
     @allure.title('测试a用户变更')
@@ -115,6 +118,7 @@ class TestIEMSUser(unittest.TestCase):
             print(mbrConsName)
             self.check_assert(mbrConsName, self.test_user_data[0]['mbrConsName'] + '变更')
 
+    @Screen(driver)
     @allure.story('账户档案')
     @allure.title('测试a现金充值')
     def test_03_recharge_user(self):
@@ -154,6 +158,7 @@ class TestIEMSUser(unittest.TestCase):
                                                  '2]/div/div/div[1]/div[7]/div[2]').text
             self.check_assert(pay_status, '支付成功')
 
+    @Screen(driver)
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story('账户档案')
     @allure.title('测试a用户退款')
@@ -179,6 +184,7 @@ class TestIEMSUser(unittest.TestCase):
                                              '2]/div/div[1]/div[1]/div/div/h2').text
             self.check_assert(actual, '退款成功')
 
+    @Screen(driver)
     @allure.story('用户档案')
     @allure.title('测试a用户退租')
     def test_05_exit_user(self):

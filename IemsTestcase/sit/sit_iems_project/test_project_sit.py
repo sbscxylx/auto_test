@@ -16,13 +16,14 @@ from IemsPage.iems_login.iems_login import IemsLogin
 class TestIEMSProject(unittest.TestCase):
     """测试sit项目级相关"""
 
-    Logger().rm_log()
+
     databases = MysqlConn().read_all_databases()
     backup_files = MysqlConn().backup_databases(databases,
                                                 ['bar_project'])
     test_login_data = ReadData('test_login_data.xlsx').read_excel()
     test_project_data = ReadData('test_project_data.xlsx').read_excel()
     Logger().info(test_project_data)
+    driver = Base('c')
 
     def check_assert(self, actual, expect):
         """
@@ -36,11 +37,12 @@ class TestIEMSProject(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = Base('c')
+        Logger().rm_log()
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
 
+    @Screen(driver)
     @allure.story('项目列表')
     @allure.title('测试sit新建项目')
     def test_01_add_project(self):
@@ -66,7 +68,7 @@ class TestIEMSProject(unittest.TestCase):
             projectName = self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[2]/div').text
             self.check_assert(projectName, self.test_project_data[3]['project_name'])
 
-
+    @Screen(driver)
     @allure.story('项目列表')
     @allure.severity(allure.severity_level.NORMAL)
     @allure.title('测试sit编辑项目')

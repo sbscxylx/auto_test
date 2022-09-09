@@ -17,7 +17,7 @@ from IemsPage.iems_login.iems_login import IemsLogin
 class TestIEMSTmpl(unittest.TestCase):
     """测试sit项目级相关"""
 
-    Logger().rm_log()
+
     databases = MysqlConn().read_all_databases()
     backup_files = MysqlConn().backup_databases(databases,
                                                 ['mbr_tmpl_billing_scheme',
@@ -26,7 +26,7 @@ class TestIEMSTmpl(unittest.TestCase):
     test_login_data = ReadData('test_login_data.xlsx').read_excel()
     test_project_data = ReadData('test_project_data.xlsx').read_excel()
     Logger().info(test_project_data)
-
+    driver = Base('c')
 
     def check_assert(self, actual, expect):
         """
@@ -40,11 +40,12 @@ class TestIEMSTmpl(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = Base('c')
+        Logger().rm_log()
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
 
+    @Screen(driver)
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit新建计费方案')
     def test_01_add_tmpl(self):
@@ -69,6 +70,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[3]/table/tbody/tr[1]/td[3]/div').text
             self.check_assert(tmplName_a, tmplName)
 
+    @Screen(driver)
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit新建计费方案版本')
     def test_02_add_tmpl_edition(self):
@@ -99,6 +101,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[4]/div/div/section/div/div[3]/table/tbody/tr/td[3]/div').text
             self.check_assert(editionName_a, editionNo)
 
+    @Screen(driver)
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit新建计费方案版本费率（复费率）')
     def test_03_add_edition_charging_fu(self):
@@ -140,6 +143,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[6]/div/div/section/div/div[3]/table/tbody/tr/td[2]/div').text
             self.check_assert(tmplType_a, tmplType + '类型')
 
+    @Screen(driver)
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit新建计费方案版本费率（复费率）')
     def test_04_add_edition_charging_dan(self):
@@ -201,6 +205,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[6]/div/div/section/div/div[3]/table/tbody/tr[2]/td[2]/div').text
             self.check_assert(tmplType_a, tmplType + '类型')
 
+    @Screen(driver)
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit删除计费方案版本费率')
     def test_05_del_edition_charging(self):
@@ -238,6 +243,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[6]/div/div/section/div/div[3]/table/tbody/tr[last()]/td[2]/div').text
             self.assertNotEqual(tmplType_a, '单一费率类型')
 
+    @Screen(driver)
     @allure.story('计费方案(含附加费)')
     @allure.title('测试sit新建计费方案')
     def test_06_add_tmpl_fee(self):
@@ -262,6 +268,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[3]/table/tbody/tr[1]/td[3]/div').text
             self.check_assert(tmplName, tmplNameFee)
 
+    @Screen(driver)
     @allure.story('计费方案(含附加费)')
     @allure.title('测试sit新建计费方案版本(不开启附加费)')
     def test_07_add_tmpl_edition_fee(self):
@@ -296,6 +303,7 @@ class TestIEMSTmpl(unittest.TestCase):
             feeName_a = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[4]/div/div/section/div/div[3]/table/tbody/tr/td[5]/div').text
             self.check_assert(feeName_a, '-')
 
+    @Screen(driver)
     @allure.story('计费方案(含附加费)')
     @allure.title('测试sit新建计费方案版本(固定价格)')
     def test_08_add_tmpl_edition_fee(self):
@@ -335,6 +343,7 @@ class TestIEMSTmpl(unittest.TestCase):
             feeMoney_a = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[4]/div/div/section/div/div[3]/table/tbody/tr/td[7]/div').text
             self.check_assert(feeMoney_a, feeMoney)
 
+    @Screen(driver)
     @allure.story('计费方案(含附加费)')
     @allure.title('测试sit新建计费方案版本(上浮比例)')
     def test_09_add_tmpl_edition_fee(self):

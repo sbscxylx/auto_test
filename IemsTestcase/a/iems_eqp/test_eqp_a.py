@@ -16,11 +16,10 @@ from IemsPage.iems_login.iems_login import IemsLogin
 class TestIEMSEqp(unittest.TestCase):
     """测试档案相关"""
 
-    Logger().rm_log()
+
     databases = MysqlConn().read_all_databases()
     # backup_files = MysqlConn().backup_databases(databases,
     #                                             ['bar_measure', 'bar_gateway', 'bar_building', 'bar_container'])
-    # driver = Base('c')
     # file_path = os.path.abspath('../../IemsTestcase/Testdata/test_login_data.xlsx')
     # file_path = GetPath().get_abs_path('../Testdata/test_login_data.xlsx')
     # file_path = os.path.abspath(file_path)
@@ -36,6 +35,7 @@ class TestIEMSEqp(unittest.TestCase):
     Logger().info(test_measure_data)
     Logger().info(test_project_data)
     Logger().info(test_gateway_data)
+    driver = Base('c')
 
     def check_assert(self, actual, eqpNo):
         """
@@ -49,11 +49,12 @@ class TestIEMSEqp(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = Base('c')
+        Logger().rm_log()
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
 
+    @Screen(driver)
     @allure.story('设备档案')
     @allure.title('测试a导入376网关')
     def test_01_import_gateway(self):
@@ -72,6 +73,7 @@ class TestIEMSEqp(unittest.TestCase):
         with allure.step("验证导入是否正确导入网关"):
             self.check_assert(actual, self.test_gateway_data[0]['智能网关编号'])
 
+    @Screen(driver)
     @allure.story('设备档案')
     @allure.title('测试a导入表计')
     def test_02_import_eqp(self):
@@ -134,6 +136,7 @@ class TestIEMSEqp(unittest.TestCase):
             comm_type = self.driver.get_element('x, //*[@id="pane-电表"]/div[3]/div[3]/table/tbody/tr[1]/td[6]/div').text
             self.check_assert(comm_type, 'GPRS/4G')
 
+    @Screen(driver)
     @allure.story('设备档案')
     @allure.title('测试a关联网关')
     def test_03_connect_gateway(self):
@@ -154,6 +157,7 @@ class TestIEMSEqp(unittest.TestCase):
             Logger().info('成功关联网关'.format(gateway_no))
             self.assertNotEqual(gateway_no, '')
 
+    @Screen(driver)
     @allure.story('设备档案')
     @allure.title('测试a解绑网关')
     def test_04_disconnect_gateway(self):
@@ -173,6 +177,7 @@ class TestIEMSEqp(unittest.TestCase):
             Logger().info(gateway_no)
             self.assertEqual(gateway_no, '')
 
+    @Screen(driver)
     @unittest.skip('a上不需要')
     @pytest.mark.skip
     def test_05_edit_bulid(self):
@@ -206,6 +211,7 @@ class TestIEMSEqp(unittest.TestCase):
         self.driver.wait_until(timeout=60, selector='x, //*[@id="left"]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div['
                                                     '2]/div/div[2]/div/div[1]/span[2]/span/span')
 
+    @Screen(driver)
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story('项目空间维护')
     @allure.title('测试a房间绑定表计')
@@ -227,6 +233,7 @@ class TestIEMSEqp(unittest.TestCase):
                                                      '2]/div[3]/table/tbody/tr/td[1]/div/div').text
             self.check_assert(bar_measure_no, self.test_measure_data[0]['测量表计编号'])
 
+    @Screen(driver)
     @allure.severity(allure.severity_level.TRIVIAL)
     @allure.story('项目空间维护')
     @allure.title('测试a维护表计')
@@ -252,6 +259,7 @@ class TestIEMSEqp(unittest.TestCase):
             self.assertNotEqual(install_time_old, install_time_new)
             Logger().info('维护前安装时间{}, 维护后安装时间{}'.format(install_time_old, install_time_new))
 
+    @Screen(driver)
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story('项目空间维护')
     @allure.title('测试a解绑表计')
@@ -280,6 +288,7 @@ class TestIEMSEqp(unittest.TestCase):
             self.driver.action_chains('右键', 'x, //*[@id="left"]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[2]/div/div['
                                             '1]/span[2]/span/span')
 
+    @Screen(driver)
     @allure.story('设备档案')
     @allure.title('测试a删除网关')
     def test_09_delete_gateway(self):
@@ -323,6 +332,7 @@ class TestIEMSEqp(unittest.TestCase):
             self.check_assert(bar_measure_new, '暂无数据')
             Logger().info('网关绑定表计{}已被删除'.format(self.test_measure_data[2]['测量表计编号']))
 
+    @Screen(driver)
     @allure.story('设备档案')
     @allure.title('测试a删除表计')
     def test_10_delete_measure(self):

@@ -1,4 +1,5 @@
 import csv
+import os
 import time, datetime
 from selenium.webdriver import ActionChains, Keys
 from Comm.log import Logger
@@ -8,6 +9,8 @@ from selenium.webdriver.support.select import Select
 from Conf.readconfig import ReadConfig
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import pytest
+import allure
 
 
 class Base:
@@ -27,7 +30,43 @@ class Base:
             options.add_additional_option('excludeSwitches', ['enable-logging'])
             self.driver = webdriver.Ie(options=options)
         else:
-            raise Exception('输入正确的浏览器！')
+            pass
+            # raise Exception('输入正确的浏览器！')
+
+    def save_screenshot(self):
+        '''
+        页面截屏保存截图
+        :return:
+        '''
+        # log_name = os.path.join(log_path, log)
+        try:
+            file_path = ReadConfig().get_file_path('screen_path')
+            # file_name = file_path + "\\{}.png".format(time.strftime('%Y-%m-%d%H%M', time.localtime(time.time())))
+            file_path = file_path + f"\\{time.strftime('%Y-%m-%d%H', time.localtime(time.time()))}"
+            if not os.path.exists(file_path):
+                os.makedirs(file_path)
+            file_name = file_path + f"\\{time.strftime('%Y-%m-%d%H%M%S', time.localtime(time.time()))}" + "失败截图.png"
+            self.driver.get_screenshot_as_file(file_name)
+            with open(file_name, mode='rb') as f:
+                file = f.read()
+            allure.attach(file, '失败截图', allure.attachment_type.PNG)
+            Logger().info("页面截图文件保存在：{}".format(file_name))
+            return file_name
+        except:
+            pass
+
+    def rm_screenshoot(self, rm_day=1):
+
+        screen_path = ReadConfig().get_file_path('screen_path')
+        for parent, dirnames, filenames in os.walk(screen_path):
+            for filename in dirnames:
+                fullname = parent + "/" + filename  # 文件全称
+                createTime = int(os.path.getctime(fullname))  # 文件创建时间
+                nDayAgo = (datetime.datetime.now() - datetime.timedelta(days=rm_day))  # 当前时间的n天前的时间
+                timeStamp = int(time.mktime(nDayAgo.timetuple()))
+                if createTime < timeStamp:  # 创建时间在n天前的文件删除
+                    os.remove(os.path.join(parent, filename))
+
 
     def open_url(self, url):
         """
@@ -166,7 +205,7 @@ class Base:
 
     def isPresent(self, selector):
         """
-        可见的元素返回True;不存在的元素/隐藏的元素返回False
+        存在的元素返回True;不存在的元素返回False
         :param selector:
         :return:
         """
@@ -290,6 +329,20 @@ class BasePage:
 
     def __init__(self, driver: Base):
         self.driver = driver
+
+
+class Screen:
+    def __init__(self, driver: Base):
+        self.driver = driver
+
+    def __call__(self, func):
+        def inner(*args, **kwargs):
+            try:
+                return func(*args, **kwargs)
+            except:
+                self.driver.save_screenshot()
+                raise
+        return inner
 
 
 if __name__ == '__main__':
