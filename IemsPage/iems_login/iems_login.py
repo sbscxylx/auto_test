@@ -22,7 +22,7 @@ class IemsLogin(BasePage):
         driver.wait_until('x, //*[@id="app"]/div/form/div[5]/div/button/span/span')
         driver.get_element('x, //*[@id="app"]/div/form/div[5]/div/button/span/span').click()
         try:
-            self.driver.wait_until(timeout=5, selector='x, //*[@class="el-dialog__body"]//button')
+            self.driver.wait_until(timeout=10, selector='x, //*[@class="el-dialog__body"]//button')
             if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
                 driver.wait_until('x, //*[@class="el-dialog__body"]//button')
                 while True:
@@ -50,7 +50,7 @@ class IemsLogin(BasePage):
         driver.wait_until('x, //*[@id="app"]/div/div[2]/form/div[5]/div/button')
         driver.get_element('x, //*[@id="app"]/div/div[2]/form/div[5]/div/button').click()
         try:
-            self.driver.wait_until(timeout=5, selector='x, //*[@class="el-dialog__body"]//button')
+            self.driver.wait_until(timeout=10, selector='x, //*[@class="el-dialog__body"]//button')
             if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
                 driver.wait_until('x, //*[@class="el-dialog__body"]//button')
                 while True:
@@ -77,7 +77,7 @@ class IemsLogin(BasePage):
         driver.wait_until('x, //*[@id="app"]/div/form/div[5]/div/button/span/span')
         driver.get_element('x, //*[@id="app"]/div/form/div[5]/div/button/span/span').click()
         try:
-            self.driver.wait_until(timeout=5, selector='x, //*[@class="el-dialog__body"]//button')
+            self.driver.wait_until(timeout=10, selector='x, //*[@class="el-dialog__body"]//button')
             if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
                 driver.wait_until('x, //*[@class="el-dialog__body"]//button')
                 while True:
@@ -104,7 +104,7 @@ class IemsLogin(BasePage):
         driver.wait_until('x, //*[@id="app"]/div/div[2]/form/div[5]/div/button')
         driver.get_element('x, //*[@id="app"]/div/div[2]/form/div[5]/div/button').click()
         try:
-            self.driver.wait_until(timeout=5, selector='x, //*[@class="el-dialog__body"]//button')
+            self.driver.wait_until(timeout=10, selector='x, //*[@class="el-dialog__body"]//button')
             if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
                 driver.wait_until('x, //*[@class="el-dialog__body"]//button')
                 while True:

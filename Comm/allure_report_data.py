@@ -44,7 +44,7 @@ class AllureFileClean:
         """ 统计用例数量 """
         try:
             file_name = ensure_path_sep("\\Results\\html2\\widgets\\summary.json")
-            print(file_name)
+            # print(file_name)
             with open(file_name, 'r', encoding='utf-8') as file:
                 data = json.load(file)
                 # print(data)
