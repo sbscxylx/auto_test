@@ -164,6 +164,7 @@ class Base:
         locator = self.selector_convert_to_locator(selector)
         method = EC.presence_of_element_located(locator)
         WebDriverWait(self.driver, timeout, poll_frequency).until(method)
+        self.sleep(0.5)
 
     def wait_play(self, selector, timeout=20, poll_frequency=0.2):
         """
@@ -176,6 +177,7 @@ class Base:
         locator = self.selector_convert_to_locator(selector)
         method = EC.visibility_of_element_located(locator)
         WebDriverWait(self.driver, timeout, poll_frequency).until(method)
+        self.sleep(0.5)
 
     def wait_display(self, selector, timeout=20, poll_frequency=0.2):
         """
@@ -189,6 +191,7 @@ class Base:
         locator = self.selector_convert_to_locator(selector)
         method = EC.invisibility_of_element_located(locator)
         WebDriverWait(self.driver, timeout, poll_frequency).until(method)
+        self.sleep(0.5)
 
     def wait_clickable(self, selector, timeout=20, poll_frequency=0.2):
         """
@@ -202,6 +205,7 @@ class Base:
         locator = self.selector_convert_to_locator(selector)
         method = EC.element_to_be_clickable(locator)
         WebDriverWait(self.driver, timeout, poll_frequency).until(method)
+        self.sleep(0.5)
 
     def isPresent(self, selector):
         """
