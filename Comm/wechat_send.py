@@ -1,6 +1,8 @@
 import os
+import sys
 import requests
-from Comm import config, ensure_path_sep
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from Comm import config
 from Comm.allure_report_data import AllureFileClean
 from Comm.get_local_ip import get_host_ip
 from Comm.log import Logger
@@ -100,5 +102,5 @@ class WeChatSend:
 
 
 if __name__ == '__main__':
-    print(ensure_path_sep('/Results/html/index.html'))
+    # print(ensure_path_sep('/Results/html/index.html'))
     WeChatSend(AllureFileClean().get_case_count()).send_wechat_notification()
