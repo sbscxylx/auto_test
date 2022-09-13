@@ -12,7 +12,7 @@ class AllureFileClean:
         """ 获取所有 allure 报告中执行用例的情况"""
         # 将所有数据都收集到files中
         files = []
-        for i in get_all_files(ensure_path_sep("/ws/Results/html/data/test-cases")):
+        for i in get_all_files(ensure_path_sep("\\ws\\Results\\html\\widgets\\summary.json")):
             # print(i)
             with open(i, 'r', encoding='utf-8') as file:
                 date = json.load(file)
@@ -43,7 +43,7 @@ class AllureFileClean:
     def get_case_count(cls) -> "TestMetrics":
         """ 统计用例数量 """
         try:
-            file_name = ensure_path_sep("/ws/Results/html/widgets/summary.json")
+            file_name = ensure_path_sep("\\ws\\Results\\html\\widgets\\summary.json")
             # print(file_name)
             with open(file_name, 'r', encoding='utf-8') as file:
                 data = json.load(file)
