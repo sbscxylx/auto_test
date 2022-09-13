@@ -1,6 +1,9 @@
 import csv
 import pandas as pd
+
+from Comm.path import ensure_path_sep
 from Conf.readconfig import ReadConfig
+import os
 
 
 class ReadData:
@@ -28,10 +31,14 @@ class ReadData:
             return data
 
 
+
+
 if __name__ == '__main__':
     # a = ReadData('../IemsTestcase/Testdata/test_login_data.xlsx').read_excel()
     # print(a)
     # r = GetPath().get_abs_path('../IemsTestcase/Testdata/test_login_data.xlsx')
     # print(r)
-    test_login_data = ReadData('test_login_data.xlsx').read_excel()
-    print(test_login_data)
+    # test_login_data = ReadData('test_login_data.xlsx').read_excel()
+    # print(test_login_data)
+    a = ReadData(ensure_path_sep("/Results/html/data/test-cases")).get_all_files()
+    print(a)
