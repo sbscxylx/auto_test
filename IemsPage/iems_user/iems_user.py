@@ -134,7 +134,7 @@ class IEMSUser(BasePage):
         self.driver.move_to_click('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[6]/div/button[1]')
         Logger().info('选择计费方案{}'.format(billingScheme))
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[6]/div/button[1]')
-        billingScheme2 = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[3]/div').text
+        billingScheme2 = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[7]/div/div').text
         Logger().info('计费方案{}'.format(billingScheme2))
         if billingScheme == billingScheme2:
             self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[8]/div/div/button[1]')
