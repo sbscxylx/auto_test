@@ -1,6 +1,8 @@
 import csv
 import os
 import time, datetime
+from functools import wraps
+
 from selenium.webdriver import ActionChains, Keys
 from Comm.log import Logger
 from selenium import webdriver
@@ -33,7 +35,9 @@ class Base:
             pass
             # raise Exception('输入正确的浏览器！')
 
-    def save_screenshot(self):
+
+
+    def save_screen(self):
         '''
         页面截屏保存截图
         :return:
@@ -336,15 +340,24 @@ class BasePage:
 
 
 class Screen:
-    def __init__(self, driver: Base):
-        self.driver = driver
 
-    def __call__(self, func):
+    def __new__(cls, func_or_cls=None):
+        self = object.__new__(cls)
+        if func_or_cls:
+            return self(func_or_cls)
+        else:
+            return self
+
+    def __init__(self, func_or_class=None):
+        pass
+
+    def __call__(self, func_or_cls=None):
+        @wraps(func_or_cls)
         def inner(*args, **kwargs):
             try:
-                return func(*args, **kwargs)
+                return func_or_cls(*args, **kwargs)
             except:
-                self.driver.save_screenshot()
+                args[0].driver.save_screen()
                 raise
         return inner
 

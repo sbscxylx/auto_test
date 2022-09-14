@@ -40,6 +40,16 @@ class Email(BaseModel):
     send_list: Union[Text, None]
 
 
+class projectData(BaseModel):
+    bar_project_name: list = None
+    Address: Text = None
+    direct: Text = None
+    directMobile: Text = None
+    business: Text = None
+    directMobile: Text = None
+    businessMobile: Text = None
+
+
 class Config(BaseModel):
     project_name: Text
     env: Text
@@ -55,3 +65,7 @@ class Config(BaseModel):
     real_time_update_test_cases: bool = False
     host: Text
     app_host: Union[Text, None]
+
+
+class Test(BaseModel):
+    project_data: "projectData"

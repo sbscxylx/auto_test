@@ -3,8 +3,11 @@ import unittest
 import warnings
 import os
 import allure
+import self
+
 from Comm.data import ReadData
 from Comm.mysql_backup import MysqlConn
+from Conf.yaml_control import *
 from IemsPage.basePage import *
 from IemsPage.iems_eqp.iems_eqp import IEMSEquipment
 from IemsPage.iems_project.iems_project import IEMSProject
@@ -17,13 +20,9 @@ class TestIEMSProject(unittest.TestCase):
     """测试sit项目级相关"""
 
 
-    databases = MysqlConn().read_all_databases()
-    backup_files = MysqlConn().backup_databases(databases,
-                                                ['bar_project'])
-    test_login_data = ReadData('test_login_data.xlsx').read_excel()
-    test_project_data = ReadData('test_project_data.xlsx').read_excel()
-    Logger().info(test_project_data)
-    driver = Base('c')
+
+    # driver = Base('c')
+
 
     def check_assert(self, actual, expect):
         """
@@ -35,14 +34,26 @@ class TestIEMSProject(unittest.TestCase):
         Logger().info('预期数据{}, 实际数据{}'.format(expect, actual))
         self.assertEqual(expect, actual)
 
+
     @classmethod
     def setUpClass(cls):
+
+        cls.databases = MysqlConn().read_all_databases()
+        cls.backup_files = MysqlConn().backup_databases(cls.databases, ['bar_project'])
+        cls.test_login_data = ReadData('test_login_data.xlsx').read_excel()
+        cls.test_project_data = ReadData('test_project_data.xlsx').read_excel()
+        cls.project = GetYamlData(ensure_path_sep("/IemsTestcase/Testdata/test_data.yaml")).circle_yaml_datas().project_data
+        Logger().info(cls.test_project_data)
         Logger().rm_log()
+        cls.driver = Base('c')
+
+
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
 
-    @Screen(driver)
+
+    @Screen
     @allure.story('项目列表')
     @allure.title('测试sit新建项目')
     def test_01_add_project(self):
@@ -56,19 +67,26 @@ class TestIEMSProject(unittest.TestCase):
         with allure.step("点击项目新增"):
             self.driver.move_to_click('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div[1]/div/li/ul/div[last()]/li/span')
         with allure.step("新建项目"):
-            IEMSProject(self.driver).add_project(self.test_project_data[3]['project_name'], self.driver.date_day(index=1),
-                                                 self.driver.date_day(), self.test_project_data[3]['Address'],
-                                                 self.test_project_data[3]['direct'], self.test_project_data[3]['directMobile'],
-                                                 self.test_project_data[3]['business'], self.test_project_data[3]['businessMobile'],
+            IEMSProject(self.driver).add_project(self.project.bar_project_name[3], self.driver.date_day(index=1),
+                                                 self.driver.date_day(), self.project.Address,
+                                                 self.project.direct, self.project.directMobile,
+                                                 self.project.business, self.project.businessMobile,
                                                  self.driver.date_day('plus', 1))
+        # with allure.step("新建项目"):
+        #     IEMSProject(self.driver).add_project(self.test_project_data[3]['project_name'], self.driver.date_day(index=1),
+        #                                          self.driver.date_day(), self.test_project_data[3]['Address'],
+        #                                          self.test_project_data[3]['direct'], self.test_project_data[3]['directMobile'],
+        #                                          self.test_project_data[3]['business'], self.test_project_data[3]['businessMobile'],
+        #                                          self.driver.date_day('plus', 1))
         with allure.step("点击关闭"):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[8]/div/div[2]/button/span').click()
         self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[2]/div')
         with allure.step("验证是否新建成功"):
             projectName = self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[2]/div').text
-            self.check_assert(projectName, self.test_project_data[3]['project_name'])
+            self.check_assert(projectName, self.project.bar_project_name[3])
 
-    @Screen(driver)
+    @unittest.skip('x')
+    @Screen
     @allure.story('项目列表')
     @allure.severity(allure.severity_level.NORMAL)
     @allure.title('测试sit编辑项目')
@@ -126,7 +144,11 @@ class TestIEMSProject(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        MysqlConn().restore_databases(cls.databases, cls.backup_files)
+        try:
+            MysqlConn().restore_databases(cls.databases, cls.backup_files)
+            pass
+        except:
+            pass
         cls.driver.driver.quit()
 
 

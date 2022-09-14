@@ -8,7 +8,10 @@
 import os
 import ast
 import yaml.scanner
+from pydantic import ValidationError
+
 from Comm import ensure_path_sep
+from Conf.models import Test
 
 
 class GetYamlData:
@@ -27,6 +30,7 @@ class GetYamlData:
         if os.path.exists(self.file_dir):
             data = open(self.file_dir, 'r', encoding='utf-8')
             res = yaml.load(data, Loader=yaml.FullLoader)
+            data.close()
         else:
             raise FileNotFoundError("文件路径不存在")
         return res
@@ -60,6 +64,23 @@ class GetYamlData:
             file.close()
             return flag
 
+    def circle_yaml_datas(self):
+
+        yaml_datas = self.get_yaml_data()
+
+        # print(yaml_datas)
+        try:
+            _yaml_datas = Test(**yaml_datas)
+            # print(_yaml_datas)
+        except ValidationError as e:
+            print(e.json())
+
+        return _yaml_datas
+
+
+        # yaml_datas_list = {k: v for k, v in _yaml_datas[key].items()}
+        # print(_yaml_datas.projetc_data)
+
 
 class GetCaseData(GetYamlData):
     """ 获取测试用例中的数据 """
@@ -87,5 +108,6 @@ class GetCaseData(GetYamlData):
 
 
 if __name__ == '__main__':
-    a = GetYamlData(ensure_path_sep("/Conf/config.yaml")).get_yaml_data()
-    print(a)
+    # a = GetYamlData(ensure_path_sep("/IemsTestcase/Testdata/test_data.yaml")).get_yaml_data()
+    b = GetYamlData(ensure_path_sep("/IemsTestcase/Testdata/test_data.yaml")).circle_yaml_datas()
+    print(b.project_data.bar_project_name)
