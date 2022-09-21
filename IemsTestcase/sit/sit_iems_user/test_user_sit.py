@@ -225,6 +225,6 @@ class TestIEMSUser(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    # pytest.main(['-s', '-q', 'test_iems_user_sit.py', '–-alluredir', './report/xml'])
+    # pytest.main(['-s', '-q', 'test_user_sit.py', '–-alluredir', './report/xml'])
     # print(1)
-    # pytest.main(['-–alluredir', './report', 'test_iems_user_sit.py'])
+    # pytest.main(['-–alluredir', './report', 'test_user_sit.py'])

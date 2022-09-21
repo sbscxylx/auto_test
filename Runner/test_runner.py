@@ -26,7 +26,7 @@ class IEMSRunner:
         # suite.addTests(unittest.TestLoader().discover(start_dir=dir,pattern='se1112_case1.py'))
         if selector == 'sit':
             # suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*sit.py'))
-            suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test_iems_user_sit.py'))
+            suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test_user_sit.py'))
         if selector == 'a':
             # suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*sit.py'))
             suite.addTests(unittest.TestLoader().discover(start_dir=dir, pattern='test*a.py'))
