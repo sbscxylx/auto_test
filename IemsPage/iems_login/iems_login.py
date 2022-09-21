@@ -1,16 +1,15 @@
 import time
 from time import sleep
-from Conf.readconfig import ReadConfig
+from Comm import *
 from IemsPage.basePage import BasePage, Base
-from Comm.log import Logger
 
 
 class IemsLogin(BasePage):
 
-    sit_url_old = ReadConfig().get_url('sit_old_url')
-    sit_url_new = ReadConfig().get_url('sit_new_url')
-    a_url_old = ReadConfig().get_url('a_old_url')
-    a_url_new = ReadConfig().get_url('a_new_url')
+    sit_url_old = config.url.sit_old_url
+    sit_url_new = config.url.sit_new_url
+    a_url_old = config.url.a_old_url
+    a_url_new = config.url.a_new_url
 
     def iems_login_old(self, user, pwd, url=sit_url_old):
         driver = self.driver
@@ -35,7 +34,7 @@ class IemsLogin(BasePage):
                     break
         except:
             pass
-        Logger().info('2.0登录成功')
+        log.Logger().info('2.0登录成功')
         sleep(1)
 
 
@@ -52,7 +51,7 @@ class IemsLogin(BasePage):
         try:
             self.driver.wait_until(timeout=10, selector='x, //*[@class="el-dialog__body"]//button')
             if driver.isPresent('x, //*[@class="el-dialog__body"]//button'):
-                driver.wait_until('x, //*[@class="el-dialog__body"]//button')
+                driver.wait_until(timeout=10, selector='x, //*[@class="el-dialog__body"]//button')
                 while True:
                     try:
                         driver.get_element('x, //*[@class="el-dialog__body"]//button').click()
@@ -63,7 +62,7 @@ class IemsLogin(BasePage):
                     break
         except:
             pass
-        Logger().info('2.0登录成功')
+        log.Logger().info('2.0登录成功')
         sleep(1)
 
 
@@ -90,7 +89,7 @@ class IemsLogin(BasePage):
                     break
         except:
             pass
-        Logger().info('2.0登录成功')
+        log.Logger().info('2.0登录成功')
         sleep(1)
 
 
@@ -117,7 +116,7 @@ class IemsLogin(BasePage):
                     break
         except:
             pass
-        Logger().info('2.0登录成功')
+        log.Logger().info('2.0登录成功')
         sleep(1)
 
 

@@ -1,32 +1,14 @@
-import time, datetime
-import unittest
-import warnings
-import os
-import allure
-from Comm.data import ReadData
-from Comm.mysql_backup import MysqlConn
-from IemsPage.basePage import *
 from IemsPage.iems_eqp.iems_eqp import IEMSEquipment
+from IemsPage.iems_login.iems_login import IemsLogin
 from IemsPage.iems_project.iems_project import IEMSProject
 from IemsPage.iems_user.iems_user import IEMSUser
-from IemsPage.iems_login.iems_login import IemsLogin
+from IemsTestcase import *
 
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.feature('测试sit计费方案相关')
 class TestIEMSTmpl(unittest.TestCase):
     """测试sit项目级相关"""
-
-
-    databases = MysqlConn().read_all_databases()
-    backup_files = MysqlConn().backup_databases(databases,
-                                                ['mbr_tmpl_billing_scheme',
-                                                 'mbr_tmpl_billing_scheme_edition',
-                                                 'mbr_tmpl_billing_scheme_edition_charging'])
-    test_login_data = ReadData('test_login_data.xlsx').read_excel()
-    test_project_data = ReadData('test_project_data.xlsx').read_excel()
-    Logger().info(test_project_data)
-    driver = Base('c')
 
     def check_assert(self, actual, expect):
         """
@@ -35,17 +17,27 @@ class TestIEMSTmpl(unittest.TestCase):
         :param expect:
         :return:
         """
-        Logger().info('预期数据{}, 实际数据{}'.format(expect, actual))
+        log.Logger().info('预期数据{}, 实际数据{}'.format(expect, actual))
         self.assertEqual(str(expect), actual)
 
     @classmethod
     def setUpClass(cls):
-        Logger().rm_log()
+
+        cls.backup_files = mysql_backup.MysqlConn().backup_databases(
+                                                    ['mbr_tmpl_billing_scheme',
+                                                     'mbr_tmpl_billing_scheme_edition',
+                                                     'mbr_tmpl_billing_scheme_edition_charging'])
+        cls.login = TestData.login_data
+        cls.project = TestData.project_data
+        Logger().info(f'登录信息{cls.login}')
+        Logger().info(f'项目信息{cls.project}')
+        cls.driver = Base('c')
+
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit新建计费方案')
     def test_01_add_tmpl(self):
@@ -54,11 +46,11 @@ class TestIEMSTmpl(unittest.TestCase):
         tmplName = '方案1(不含附加费)'
 
         with allure.step("登录sit2.3"):
-            IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+            IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         with allure.step("进入计费档案界面"):
             IEMSProject(self.driver).enter_tmpl()
         with allure.step('选择项目'):
-            IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+            IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         with allure.step('新建计费方案'):
             IEMSProject(self.driver).add_tmpl(tmplName, '电表')
         with allure.step('查询方案1'):
@@ -70,7 +62,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[3]/table/tbody/tr[1]/td[3]/div').text
             self.check_assert(tmplName_a, tmplName)
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit新建计费方案版本')
     def test_02_add_tmpl_edition(self):
@@ -78,11 +70,11 @@ class TestIEMSTmpl(unittest.TestCase):
 
         editionNo = '新增版本'
         # with allure.step("登录sit2.3"):
-        #     IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+        #     IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         # with allure.step("进入计费档案界面"):
         #     IEMSProject(self.driver).enter_tmpl()
         # with allure.step('选择项目'):
-        #     IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+        #     IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         # with allure.step('查询方案1'):
         #     self.driver.get_element(
         #         'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
@@ -101,7 +93,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[4]/div/div/section/div/div[3]/table/tbody/tr/td[3]/div').text
             self.check_assert(editionName_a, editionNo)
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit新建计费方案版本费率（复费率）')
     def test_03_add_edition_charging_fu(self):
@@ -113,11 +105,11 @@ class TestIEMSTmpl(unittest.TestCase):
         tmplCharging4 = 4
 
         # with allure.step("登录sit2.3"):
-        #     IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+        #     IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         # with allure.step("进入计费档案界面"):
         #     IEMSProject(self.driver).enter_tmpl()
         # with allure.step('选择项目'):
-        #     IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+        #     IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         # with allure.step('查询方案1'):
         #     self.driver.get_element(
         #         'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
@@ -143,7 +135,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[6]/div/div/section/div/div[3]/table/tbody/tr/td[2]/div').text
             self.check_assert(tmplType_a, tmplType + '类型')
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit新建计费方案版本费率（复费率）')
     def test_04_add_edition_charging_dan(self):
@@ -152,11 +144,11 @@ class TestIEMSTmpl(unittest.TestCase):
         tmplCharging = 1
 
         # with allure.step("登录sit2.3"):
-        #     IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+        #     IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         # with allure.step("进入计费档案界面"):
         #     IEMSProject(self.driver).enter_tmpl()
         # with allure.step('选择项目'):
-        #     IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+        #     IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         # with allure.step('查询方案1'):
         #     self.driver.get_element(
         #         'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
@@ -205,18 +197,18 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[6]/div/div/section/div/div[3]/table/tbody/tr[2]/td[2]/div').text
             self.check_assert(tmplType_a, tmplType + '类型')
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(不含附加费)')
     @allure.title('测试sit删除计费方案版本费率')
     def test_05_del_edition_charging(self):
         """测试sit删除计费方案版本费率(不含附加费)"""
 
         # with allure.step("登录sit2.3"):
-        #     IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+        #     IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         # with allure.step("进入计费档案界面"):
         #     IEMSProject(self.driver).enter_tmpl()
         # with allure.step('选择项目'):
-        #     IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+        #     IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         # with allure.step('查询方案1'):
         #     self.driver.get_element(
         #         'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
@@ -243,7 +235,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[6]/div/div/section/div/div[3]/table/tbody/tr[last()]/td[2]/div').text
             self.assertNotEqual(tmplType_a, '单一费率类型')
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(含附加费)')
     @allure.title('测试sit新建计费方案')
     def test_06_add_tmpl_fee(self):
@@ -252,11 +244,11 @@ class TestIEMSTmpl(unittest.TestCase):
         tmplNameFee = '方案1（含附加费）'
 
         with allure.step("登录sit2.3"):
-            IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+            IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         with allure.step("进入计费档案界面"):
             IEMSProject(self.driver).enter_tmpl(isFee='yes')
         with allure.step('选择项目'):
-            IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+            IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         with allure.step('新建计费方案（含附加费）'):
             IEMSProject(self.driver).add_tmpl(tmplNameFee, '电表')
         with allure.step('查询方案1（含附加费）'):
@@ -268,7 +260,7 @@ class TestIEMSTmpl(unittest.TestCase):
                 'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[3]/table/tbody/tr[1]/td[3]/div').text
             self.check_assert(tmplName, tmplNameFee)
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(含附加费)')
     @allure.title('测试sit新建计费方案版本(不开启附加费)')
     def test_07_add_tmpl_edition_fee(self):
@@ -277,11 +269,11 @@ class TestIEMSTmpl(unittest.TestCase):
         tmplNameFee = '方案1（含附加费）'
         editionNo = '新增版本(不开启附加费)'
         # with allure.step("登录sit2.3"):
-        #     IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+        #     IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         # with allure.step("进入计费档案界面"):
         #     IEMSProject(self.driver).enter_tmpl(isFee='yes')
         # with allure.step('选择项目'):
-        #     IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+        #     IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         # with allure.step('查询方案1'):
         #     self.driver.get_element(
         #         'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
@@ -303,7 +295,7 @@ class TestIEMSTmpl(unittest.TestCase):
             feeName_a = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[4]/div/div/section/div/div[3]/table/tbody/tr/td[5]/div').text
             self.check_assert(feeName_a, '-')
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(含附加费)')
     @allure.title('测试sit新建计费方案版本(固定价格)')
     def test_08_add_tmpl_edition_fee(self):
@@ -313,11 +305,11 @@ class TestIEMSTmpl(unittest.TestCase):
         feeName = '固定价格'
         feeMoney = '1.1314'
         # with allure.step("登录sit2.3"):
-        #     IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+        #     IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         # with allure.step("进入计费档案界面"):
         #     IEMSProject(self.driver).enter_tmpl(isFee='yes')
         # with allure.step('选择项目'):
-        #     IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+        #     IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         # with allure.step('查询方案1'):
         #     self.driver.get_element(
         #         'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
@@ -343,7 +335,7 @@ class TestIEMSTmpl(unittest.TestCase):
             feeMoney_a = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[4]/div/div/section/div/div[3]/table/tbody/tr/td[7]/div').text
             self.check_assert(feeMoney_a, feeMoney)
 
-    @Screen(driver)
+    @Screen
     @allure.story('计费方案(含附加费)')
     @allure.title('测试sit新建计费方案版本(上浮比例)')
     def test_09_add_tmpl_edition_fee(self):
@@ -353,11 +345,11 @@ class TestIEMSTmpl(unittest.TestCase):
         feeName = '上浮比例'
         feeMoney = '1.13'
         # with allure.step("登录sit2.3"):
-        #     IemsLogin(self.driver).iems_login_new(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+        #     IemsLogin(self.driver).iems_login_new(self.login.user[0], self.login.pwd[0])
         # with allure.step("进入计费档案界面"):
         #     IEMSProject(self.driver).enter_tmpl(isFee='yes')
         # with allure.step('选择项目'):
-        #     IEMSUser(self.driver).user_project(self.test_project_data[1]['project_name'])
+        #     IEMSUser(self.driver).user_project(self.project.bar_project_name[1])
         # with allure.step('查询方案1'):
         #     self.driver.get_element(
         #         'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
@@ -391,7 +383,7 @@ class TestIEMSTmpl(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        MysqlConn().restore_databases(cls.databases, cls.backup_files)
+        mysql_backup.MysqlConn().restore_databases(cls.backup_files)
         cls.driver.driver.quit()
 
 

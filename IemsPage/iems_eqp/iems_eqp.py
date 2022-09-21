@@ -1,5 +1,5 @@
 from time import sleep
-from Comm.log import Logger
+from Comm import *
 from IemsPage.basePage import BasePage, Base
 
 
@@ -45,7 +45,7 @@ class IEMSEquipment(BasePage):
                 sleep(1)
                 self.driver.wait_display('x, //*[@id="pane-电表"]/div[3]/div[8]')
                 break
-        Logger().info('进入{}设备档案'.format(barProjectName))
+        log.Logger().info('进入{}设备档案'.format(barProjectName))
 
 
     def select_type(self, type):
@@ -59,17 +59,17 @@ class IEMSEquipment(BasePage):
             self.driver.get_element('x, //*[@id="tab-电表"]').click()
             self.driver.wait_display(timeout=60, selector='x, //*[@id="pane-电表"]/div[3]/div[8]')
             sleep(1)
-            Logger().info('进入设备档案电表界面')
+            log.Logger().info('进入设备档案电表界面')
         if type == '00080002':
             self.driver.get_element('x, //*[@id="tab-水表"]').click()
             self.driver.wait_display(timeout=60, selector='x, //*[@id="pane-水表"]/div[3]/div[8]')
             sleep(1)
-            Logger().info('进入设备档案水表界面')
+            log.Logger().info('进入设备档案水表界面')
         if type == '网关':
             self.driver.get_element('x, //*[@id="tab-网关"]').click()
             self.driver.wait_display(timeout=60, selector='x, //*[@id="pane-网关"]/div[3]/div[8]')
             sleep(1)
-            Logger().info('进入设备档案网关界面')
+            log.Logger().info('进入设备档案网关界面')
 
 
     def import_eqp_a(self, type, eqpFile):
@@ -80,7 +80,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始导入设备')
+        log.Logger().info('开始导入设备')
         if type == '00080001':
             self.select_type(type)
             self.driver.get_element('x, //*[@id="pane-电表"]/div[1]/div/button').click()
@@ -108,7 +108,7 @@ class IEMSEquipment(BasePage):
             #     self.driver.get_element('x, //*[@id="tab-网关"]').click()
             self.driver.wait_display(timeout=120, selector='x, //*[@id="pane-网关"]/div[3]/div[8]')
             sleep(1)
-        Logger().info('导入设备成功')
+        log.Logger().info('导入设备成功')
 
 
     def import_eqp(self, type, eqpFile):
@@ -119,7 +119,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始导入设备')
+        log.Logger().info('开始导入设备')
         if type == '00080001':
             self.select_type(type)
             self.driver.get_element('x, //*[@id="pane-电表"]/div[1]/div/button').click()
@@ -147,7 +147,7 @@ class IEMSEquipment(BasePage):
             #     self.driver.get_element('x, //*[@id="tab-网关"]').click()
             self.driver.wait_display(timeout=120, selector='x, //*[@id="pane-网关"]/div[3]/div[8]')
             sleep(1)
-        Logger().info('导入设备成功')
+        log.Logger().info('导入设备成功')
 
 
     def select_index(self, index):
@@ -157,12 +157,12 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始搜索{}'.format(index))
+        log.Logger().info('开始搜索{}'.format(index))
         self.driver.wait_until('x, //body/div[last()]/div/input')
         self.driver.get_element('x, //body/div[last()]/div/input').send_keys(index)
         sleep(1)
         self.driver.get_element('x, //body/div[last()]/div/div/button').click()
-        Logger().info('查到{}'.format(index))
+        log.Logger().info('查到{}'.format(index))
         sleep(1)
 
     def select_eqp(self, type, eqpNo):
@@ -200,7 +200,7 @@ class IEMSEquipment(BasePage):
             self.driver.get_element('x, //body/div[last()]/div/div/button').click()
             self.driver.wait_display('x,//*[@id="pane-网关"]/div[3]/div[8]/div/p')
             sleep(1)
-        Logger().info('查到设备{}'.format(eqpNo))
+        log.Logger().info('查到设备{}'.format(eqpNo))
 
 
     def connect_gateway(self, type):
@@ -210,7 +210,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始关联网关')
+        log.Logger().info('开始关联网关')
         if type == '00080001':
             self.driver.get_element(
                 'x, //*[@id="pane-电表"]/div[3]/div[5]/div[2]/table/tbody/tr/td[18]/div/button[2]/span').click()
@@ -225,7 +225,7 @@ class IEMSEquipment(BasePage):
             self.driver.wait_display('x, //body/div[last()]/p')
             self.driver.wait_display('x, //*[@id="pane-电表"]/div[3]/div[8]')
             sleep(1)
-        Logger().info('关联网关结束')
+        log.Logger().info('关联网关结束')
 
 
     def disconnect_gateway_a(self, type):
@@ -235,7 +235,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始解绑网关')
+        log.Logger().info('开始解绑网关')
         if type == '00080001':
             self.driver.get_element(
                 'x, //*[@id="pane-电表"]/div[3]/div[5]/div[2]/table/tbody/tr[1]/td[18]/div/button[2]/span').click()
@@ -244,7 +244,7 @@ class IEMSEquipment(BasePage):
             self.driver.wait_play('x, //*[@id="pane-电表"]/div[3]/div[8]')
             self.driver.wait_display('x, //*[@id="pane-电表"]/div[3]/div[8]')
             sleep(1)
-        Logger().info('成功解绑')
+        log.Logger().info('成功解绑')
 
 
     def disconnect_gateway(self, type):
@@ -254,7 +254,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始解绑网关')
+        log.Logger().info('开始解绑网关')
         if type == '00080001':
             self.driver.get_element(
                 'x, //*[@id="pane-电表"]/div[3]/div[5]/div[2]/table/tbody/tr[1]/td[18]/div/button[2]/span').click()
@@ -263,7 +263,7 @@ class IEMSEquipment(BasePage):
             # self.driver.wait_play('x, //*[@id="pane-电表"]/div[3]/div[8]')
             self.driver.wait_display('x, //*[@id="pane-电表"]/div[3]/div[8]')
             sleep(1)
-        Logger().info('成功解绑')
+        log.Logger().info('成功解绑')
 
 
     def enter_project(self):
@@ -286,7 +286,7 @@ class IEMSEquipment(BasePage):
                                   '1]/div/li/ul/div[1]/li/span')
         self.driver.wait_display('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[8]')
         sleep(1)
-        Logger().info('进入项目列表')
+        log.Logger().info('进入项目列表')
 
 
     def enter_project_space(self, barProjectName):
@@ -307,7 +307,7 @@ class IEMSEquipment(BasePage):
                                 '2]/table/tbody/tr/td[12]/div/button[1]').click()
         self.driver.wait_until('x, //*[@id="left"]/div[3]/div[1]/div[1]/span[2]/span/span')
         self.driver.assert_text('x, //*[@id="left"]/div[3]/div[1]/div[1]/span[2]/span/span', barProjectName)
-        Logger().info('进入{}项目空间'.format(barProjectName))
+        log.Logger().info('进入{}项目空间'.format(barProjectName))
 
 
     def add_building(self, type, buildName, buildAbbr, buildArea, buildDesc):
@@ -321,7 +321,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始新增建筑')
+        log.Logger().info('开始新增建筑')
         self.driver.move_to_click('x, //body/div[last()]/div/div[2]/span')
         if type == 'build':
             self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[3]/div/div[1]/span')
@@ -359,7 +359,7 @@ class IEMSEquipment(BasePage):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[7]/div/div[2]/div/button[2]').click()
             self.driver.wait_until('x, //*[@id="left"]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[2]/div/div[1]/span['
                                    '2]/span/span')
-        Logger().info('新增结束')
+        log.Logger().info('新增结束')
 
 
     def delete_building(self):
@@ -368,10 +368,10 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始删除建筑')
+        log.Logger().info('开始删除建筑')
         self.driver.move_to_click('x, //body/div[5]/div/div[last()]/span')
         self.driver.get_element('x, //body/div[4]/div/div[3]/button[last()]').click()
-        Logger().info('删除建筑结束')
+        log.Logger().info('删除建筑结束')
 
 
     def add_measure(self, eqpNo, selector):
@@ -382,7 +382,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始表计和房间绑定')
+        log.Logger().info('开始表计和房间绑定')
         self.driver.move_to_click('x, //body/div[last()]/div/div[2]/span')
         self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[12]/div/div[1]/span')
         self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[12]/div/div[2]/form/div['
@@ -403,7 +403,7 @@ class IEMSEquipment(BasePage):
                                        '3]/table/tbody/tr/td[11]/div/button[1]/span')
             break
         sleep(1)
-        Logger().info('新增表计结束')
+        log.Logger().info('新增表计结束')
 
 
     def edit_measure(self):
@@ -412,7 +412,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始维护表计')
+        log.Logger().info('开始维护表计')
         self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[2]/div[2]/div['
                                 '3]/table/tbody/tr/td[11]/div/button[1]').click()   # 点击维护表计
         self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[12]/div/div[1]/span')
@@ -427,7 +427,7 @@ class IEMSEquipment(BasePage):
         self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[2]/div[2]/div['
                                '3]/table/tbody/tr/td[11]/div/button[1]/span')
         sleep(1)
-        Logger().info('维护表计结束')
+        log.Logger().info('维护表计结束')
 
 
     def unbind_measure(self):
@@ -436,12 +436,12 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始解绑表计')
+        log.Logger().info('开始解绑表计')
         self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[2]/div[2]/div['
                                 '3]/table/tbody/tr[1]/td[11]/div/button[last()]').click()
         self.driver.get_element('x, //body/div[last()-1]/div/div[3]/button[2]').click()
         sleep(1)
-        Logger().info('解绑表计结束')
+        log.Logger().info('解绑表计结束')
 
 
     def delete_eqp(self, type):
@@ -451,7 +451,7 @@ class IEMSEquipment(BasePage):
         :return:
         """
 
-        Logger().info('开始删除设备')
+        log.Logger().info('开始删除设备')
         self.driver.wait_until('x, //*[@id="pane-网关"]/div[3]/div[5]/div[2]/table/tbody/tr/td[13]/div/button[last()]')
         if type == '网关':
             self.driver.get_element(
@@ -472,7 +472,7 @@ class IEMSEquipment(BasePage):
             self.driver.wait_play('x, //body/div[last()]/p')
             self.driver.wait_display(timeout=120, selector='x, //body/div[last()]/p')
             sleep(1)
-        Logger().info('成功删除')
+        log.Logger().info('成功删除')
 
 
 

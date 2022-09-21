@@ -1,14 +1,13 @@
 import os
 import sys
 import requests
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from Comm import config
-from Comm.allure_report_data import AllureFileClean
-from Comm.get_local_ip import get_host_ip
-from Comm.log import Logger
-from Comm.time_control import now_time
-from Conf.exceptions import SendMessageError, ValueTypeError
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # 父路径的父路径
+from Comm import *
+from Conf import exceptions
 from Conf.models import TestMetrics
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 class WeChatSend:
@@ -39,13 +38,13 @@ class WeChatSend:
                     if isinstance(i, str):
                         res = requests.post(url=config.wechat.webhook, json=_data, headers=self.headers)
                         if res.json()['errcode'] != 0:
-                            Logger().error(res.json())
-                            raise SendMessageError("企业微信「文本类型」消息发送失败")
+                            log.Logger().error(res.json())
+                            raise exceptions.SendMessageError("企业微信「文本类型」消息发送失败")
 
                     else:
-                        raise ValueTypeError("手机号码必须是字符串类型.")
+                        raise exceptions.ValueTypeError("手机号码必须是字符串类型.")
         else:
-            raise ValueTypeError("手机号码列表必须是list类型.")
+            raise exceptions.ValueTypeError("手机号码列表必须是list类型.")
 
     def send_markdown(self, content):
         """
@@ -56,8 +55,8 @@ class WeChatSend:
         _data = {"msgtype": "markdown", "markdown": {"content": content}}
         res = requests.post(url=config.wechat.webhook, json=_data, headers=self.headers)
         if res.json()['errcode'] != 0:
-            Logger().error(res.json())
-            raise SendMessageError("企业微信「MarkDown类型」消息发送失败")
+            log.Logger().error(res.json())
+            raise exceptions.SendMessageError("企业微信「MarkDown类型」消息发送失败")
 
     def _upload_file(self, file):
         """
@@ -78,8 +77,8 @@ class WeChatSend:
         _data = {"msgtype": "file", "file": {"media_id": self._upload_file(file)}}
         res = requests.post(url=config.wechat.webhook, json=_data, headers=self.headers)
         if res.json()['errcode'] != 0:
-            Logger().error(res.json())
-            raise SendMessageError("企业微信「file类型」消息发送失败")
+            log.Logger().error(res.json())
+            raise exceptions.SendMessageError("企业微信「file类型」消息发送失败")
 
     def send_wechat_notification(self):
         """ 发送企业微信通知 """
@@ -94,13 +93,13 @@ class WeChatSend:
                                     >异常用例数：`{self.metrics.broken}个`
                                     >跳过用例数：<font color=\"warning\">{self.metrics.skipped}个</font>
                                     >用例执行时长：<font color=\"warning\">{self.metrics.time} s</font>
-                                    >时间：<font color=\"comment\">{now_time()}</font>
-                                    >测试报告，点击查看>>[测试报告入口](http://{get_host_ip()}:8080/jenkins/job/{self.JOB_NAME}/{self.BUILD_NUMBER}/allure/)
+                                    >时间：<font color=\"comment\">{time_control.now_time()}</font>
+                                    >测试报告，点击查看>>[测试报告入口](http://{get_local_ip.get_host_ip()}:8080/jenkins/job/{self.JOB_NAME}/{self.BUILD_NUMBER}/allure/)
                                     >非相关负责人员可忽略此消息。"""
 
-        WeChatSend(AllureFileClean().get_case_count()).send_markdown(text)
+        WeChatSend(allure_report_data.AllureFileClean().get_case_count()).send_markdown(text)
 
 
 if __name__ == '__main__':
     # print(ensure_path_sep('/Results/html/index.html'))
-    WeChatSend(AllureFileClean().get_case_count()).send_wechat_notification()
+    WeChatSend(allure_report_data.AllureFileClean().get_case_count()).send_wechat_notification()

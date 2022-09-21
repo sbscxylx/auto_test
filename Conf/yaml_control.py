@@ -5,13 +5,10 @@
 # @Author : 余少琪
 """
 
-import os
-import ast
+from Comm import *
 import yaml.scanner
 from pydantic import ValidationError
-
-from Comm import ensure_path_sep
-from Conf.models import Test
+from Conf.models import TestData
 
 
 class GetYamlData:
@@ -70,7 +67,7 @@ class GetYamlData:
 
         # print(yaml_datas)
         try:
-            _yaml_datas = Test(**yaml_datas)
+            _yaml_datas = TestData(**yaml_datas)
             # print(_yaml_datas)
         except ValidationError as e:
             print(e.json())

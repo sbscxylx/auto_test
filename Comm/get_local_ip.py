@@ -35,3 +35,4 @@ if __name__ == '__main__':
     # print(a)
 
     jenkins_server_url = f'http://{get_host_ip()}:8080/jenkins'
+    print(jenkins_server_url)

@@ -7,4 +7,20 @@ project_data:
   businessMobile: '15000000000'
 
 
+login_data:
+  user: [admin1, admin, ceshi]
+  pwd: [admin, admin, ceshi]
+
+
+user_data:
+  mbrConsName: 发布回归
+  contacter: 联系人
+  contacterMobile: 15000000000
+
+
+measure_data:
+  barMeasureNO: ['202206010001', '202206010002', '202206010003', '202206010004']
+  commType: ['GPRS/4G', '电信NB-IoT', '485']
+  gatewayNo: ['20220603']
+
 

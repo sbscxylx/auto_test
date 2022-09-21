@@ -1,17 +1,13 @@
-import csv
-import os
-import time, datetime
+import shutil
 from functools import wraps
-
+from Comm import *
 from selenium.webdriver import ActionChains, Keys
 from Comm.log import Logger
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-from Conf.readconfig import ReadConfig
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import pytest
 import allure
 
 
@@ -32,45 +28,46 @@ class Base:
             options.add_additional_option('excludeSwitches', ['enable-logging'])
             self.driver = webdriver.Ie(options=options)
         else:
-            pass
-            # raise Exception('输入正确的浏览器！')
-
-
+            raise Exception('输入正确的浏览器！')
 
     def save_screen(self):
         '''
         页面截屏保存截图
         :return:
         '''
-        # log_name = os.path.join(log_path, log)
+
         try:
-            file_path = ReadConfig().get_file_path('screen_path')
-            # file_name = file_path + "\\{}.png".format(time.strftime('%Y-%m-%d%H%M', time.localtime(time.time())))
-            file_path = file_path + f"\\{time.strftime('%Y-%m-%d%H', time.localtime(time.time()))}"
+            self.rm_screenshoot()
+            file_path = get_path.ensure_path_sep('/Log/screen') + f"\\{time.strftime('%Y-%m-%d%H', time.localtime(time.time()))}"
+            Logger().info(f'文件路径{file_path}')
             if not os.path.exists(file_path):
                 os.makedirs(file_path)
             file_name = file_path + f"\\{time.strftime('%Y-%m-%d%H%M%S', time.localtime(time.time()))}" + "失败截图.png"
+            Logger().info(f'文件名称{file_name}')
             self.driver.get_screenshot_as_file(file_name)
             with open(file_name, mode='rb') as f:
                 file = f.read()
             allure.attach(file, '失败截图', allure.attachment_type.PNG)
             Logger().info("页面截图文件保存在：{}".format(file_name))
             return file_name
+
         except:
-            pass
+            Logger().info('截图失败')
+
 
     def rm_screenshoot(self, rm_day=1):
 
-        screen_path = ReadConfig().get_file_path('screen_path')
-        for parent, dirnames, filenames in os.walk(screen_path):
-            for filename in dirnames:
-                fullname = parent + "/" + filename  # 文件全称
-                createTime = int(os.path.getctime(fullname))  # 文件创建时间
-                nDayAgo = (datetime.datetime.now() - datetime.timedelta(days=rm_day))  # 当前时间的n天前的时间
-                timeStamp = int(time.mktime(nDayAgo.timetuple()))
-                if createTime < timeStamp:  # 创建时间在n天前的文件删除
-                    os.remove(os.path.join(parent, filename))
-
+        try:
+            for parent, dirnames, filenames in os.walk(get_path.ensure_path_sep('/Log/screen')):
+                for dirname in dirnames:
+                    fullname = parent + "/" + dirname  # 文件全称
+                    createTime = int(os.path.getctime(r'{}'.format(fullname)))  # 文件创建时间
+                    nDayAgo = (datetime.datetime.now() - datetime.timedelta(days=rm_day))  # 当前时间的n天前的时间
+                    timeStamp = int(time.mktime(nDayAgo.timetuple()))
+                    if createTime < timeStamp:  # 创建时间在n天前的文件删除
+                        shutil.rmtree(os.path.join(parent, dirname))
+        except:
+            print('没有可删除截图')
 
     def open_url(self, url):
         """
@@ -129,7 +126,6 @@ class Base:
 
         self.get_element(selector).clear()
         self.get_element(selector).send_keys(value)
-
 
     def sleep(self, second):
         """
@@ -223,8 +219,6 @@ class Base:
             return True
         except:
             return False
-
-
 
     def assert_text(self, selector, value, success_text='', failure_text=''):
         flag = True
@@ -359,17 +353,21 @@ class Screen:
             except:
                 args[0].driver.save_screen()
                 raise
+
         return inner
 
 
 if __name__ == '__main__':
-    b = Base('c')
-    url = ReadConfig().get_url('base_url')
-    b.open_url(url)
-    # b.get_element('i,account').send_keys('admin')
-    # b.get_element('i,password').send_keys('123456')
-    # b.get_element('i,submit').click()
-    # b.sleep(2)
-    # b.get_element('x,//*[@id="s-menu-superadmin"]/button').click()
-    # b.switch_to_frame('i,iframe-superadmin')
-    # b.get_element('x,//*[@id="shortcutBox"]/div/div[1]/div/a/h3').click()
+    # b = Base('c')
+    # b.save_screen()
+    # print(int(os.path.getctime('C:\Users\Administrator\Desktop\UIAutoTest\Log\screen/2022-09-081454')))
+    # os.rmdir(r'C:\Users\Administrator\Desktop\UIAutoTest\Log\screen\2022-09-0815')
+    file_path = get_path.ensure_path_sep(
+        '/Log/screen') + f"\\{time.strftime('%Y-%m-%d%H', time.localtime(time.time()))}"
+    if not os.path.exists(file_path):
+        os.makedirs(file_path)
+    file_name = file_path + f"\\{time.strftime('%Y-%m-%d%H%M%S', time.localtime(time.time()))}" + "失败截图.png"
+    driver.get_screenshot_as_file(file_name)
+    with open(file_name, mode='rb') as f:
+        print('截图开始3')
+        file = f.read()

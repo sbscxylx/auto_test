@@ -1,7 +1,5 @@
-import time
 from time import sleep
-from Conf.readconfig import ReadConfig
-from Comm.log import Logger
+from Comm import *
 from IemsPage.basePage import BasePage, Base
 from selenium.webdriver.common.keys import Keys
 
@@ -38,7 +36,7 @@ class IEMSUser(BasePage):
         self.driver.move_to_click('x, //*[@id="app"]/div/div[1]/div[2]/div[1]/div/ul/div[2]/div/div/li/ul/div[1]/div/li/span')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[1]/button[3]/span')
         if self.driver.assert_text('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[1]/button[3]/span', '开户'):
-            Logger().info('进入用户档案界面')
+            log.Logger().info('进入用户档案界面')
             self.driver.wait_display('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[8]/div/p')
         sleep(1)
 
@@ -52,7 +50,7 @@ class IEMSUser(BasePage):
         :return:
         """
 
-        Logger().info('开始开户')
+        log.Logger().info('开始开户')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/form/div[1]/div/div/input')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/form/div[1]/div/div/input').send_keys(mbrConsName)
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/form/div[4]/div/div/input').send_keys(contacter)
@@ -68,16 +66,16 @@ class IEMSUser(BasePage):
         self.driver.get_element('x, //body/div[last()]/div[1]/div[last()]/div/ul/li/span').click()
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/form/div[7]/div/button').click()
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[8]/div/div/button[1]')
-        Logger().info('等待表计加载')
+        log.Logger().info('等待表计加载')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[8]/div/div/button[1]').click()
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[6]/div/button[1]')
-        Logger().info('等待计费方案加载')
+        log.Logger().info('等待计费方案加载')
         billingScheme = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[3]/div').text
         self.driver.move_to_click('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[6]/div/button[1]')
-        Logger().info('选择计费方案{}'.format(billingScheme))
+        log.Logger().info('选择计费方案{}'.format(billingScheme))
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[6]/div/button[1]')
         billingScheme2 = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[3]/div').text
-        Logger().info('计费方案{}'.format(billingScheme2))
+        log.Logger().info('计费方案{}'.format(billingScheme2))
         if billingScheme == billingScheme2:
             self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[8]/div/div/button[1]').click()
             self.driver.wait_until(
@@ -92,12 +90,12 @@ class IEMSUser(BasePage):
         self.driver.wait_until('x, //body/div[last()-1]/div/div[last()]/div/span')
         if self.driver.assert_text('x, //body/div[last()-1]/div/div[last()]/div/span', '（表计底度错误会影响后续扣费，请仔细确认！）'):
             self.driver.get_element('x, //body/div[last()-1]/div/div[last()]/div[last()]/button[1]').click()
-            Logger().info('开户确认')
+            log.Logger().info('开户确认')
             self.driver.wait_display('x, //body/div[last()-1]/div/p')
             self.driver.wait_play('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[7]/div/p')
             self.driver.wait_display('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[7]/div/p')
             self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[1]/div/div[1]/div/div/h2')
-            Logger().info('开户结束')
+            log.Logger().info('开户结束')
             sleep(1)
 
 
@@ -110,7 +108,7 @@ class IEMSUser(BasePage):
         :return:
         """
 
-        Logger().info('开始开户')
+        log.Logger().info('开始开户')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/form/div[1]/div/div/input')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/form/div[1]/div/div/input').send_keys(mbrConsName)
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/form/div[4]/div/div/input').send_keys(contacter)
@@ -126,16 +124,16 @@ class IEMSUser(BasePage):
         self.driver.get_element('x, //body/div[last()]/div[1]/div[last()]/div/ul/li/span').click()
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/form/div[7]/div/button').click()
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[8]/div/div/button[1]')
-        Logger().info('等待表计加载')
+        log.Logger().info('等待表计加载')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[8]/div/div/button[1]').click()
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[6]/div/button[1]')
-        Logger().info('等待计费方案加载')
+        log.Logger().info('等待计费方案加载')
         billingScheme = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[3]/div').text
         self.driver.move_to_click('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[6]/div/button[1]')
-        Logger().info('选择计费方案{}'.format(billingScheme))
+        log.Logger().info('选择计费方案{}'.format(billingScheme))
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[5]/div/div/section/div/div/div[3]/table/tbody/tr[1]/td[6]/div/button[1]')
         billingScheme2 = self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[7]/div/div').text
-        Logger().info('计费方案{}'.format(billingScheme2))
+        log.Logger().info('计费方案{}'.format(billingScheme2))
         if billingScheme == billingScheme2:
             self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[8]/div/div/button[1]')
             self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[8]/div/div/button[1]').click()
@@ -151,12 +149,12 @@ class IEMSUser(BasePage):
         self.driver.wait_until('x, //body/div[last()-1]/div/div[last()]/div/span')
         if self.driver.assert_text('x, //body/div[last()-1]/div/div[last()]/div/span', '（表计底度错误会影响后续扣费，请仔细确认！）'):
             self.driver.get_element('x, //body/div[last()-1]/div/div[last()]/div[last()]/button[1]').click()
-            Logger().info('开户确认')
+            log.Logger().info('开户确认')
             self.driver.wait_display('x, //body/div[last()-1]/div/p')
             # self.driver.wait_play('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[7]/div/p')
             self.driver.wait_display('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[7]/div/p')
             self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[1]/div/div[1]/div/div/h2')
-            Logger().info('开户结束')
+            log.Logger().info('开户结束')
             sleep(1)
 
 
@@ -167,13 +165,13 @@ class IEMSUser(BasePage):
         :return:
         """
 
-        Logger().info('开始变更')
+        log.Logger().info('开始变更')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/form/div[2]/div/div/input')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/form/div[2]/div/div/input').send_keys(mbrConsName)
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/div/button')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/div/button').click()
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[8]/div/div/button')
-        Logger().info('等待表计加载')
+        log.Logger().info('等待表计加载')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/div[6]/button[2]').click()
         sleep(1)
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/div[6]/button[2]').click()
@@ -182,7 +180,7 @@ class IEMSUser(BasePage):
         # self.driver.wait_play('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[7]/div/p')
         self.driver.wait_display('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[7]/div/p')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/div[1]/div[1]/div/h2')
-        Logger().info('变更结束')
+        log.Logger().info('变更结束')
         sleep(1)
 
 
@@ -192,7 +190,7 @@ class IEMSUser(BasePage):
         :param refundMoney: 退款金额
         :return:
         """
-        Logger().info('开始退款')
+        log.Logger().info('开始退款')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[1]/div[3]/table/tbody/tr[1]/td[last()]/div/div/button')
         self.driver.move_to_click('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[1]/div[3]/table/tbody/tr[1]/td[last()]/div/div/button')
         sleep(1)
@@ -204,7 +202,7 @@ class IEMSUser(BasePage):
         self.driver.assert_text('x, //body/div[last()-1]/div/div[2]/div[1]/div[2]/p', '当前为现金退款，请确保用户收到现金')
         self.driver.get_element('x, //body/div[last()-1]/div/div[3]/button[2]').click()
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div/section/div[2]/div/div[1]/div[1]/div/div/h2')
-        Logger().info('退款成功')
+        log.Logger().info('退款成功')
         sleep(1)
 
     def exit_user(self, zxygzdl=0, zxygzdl1=0, zxygzdl2=0, zxygzdl3=0, zxygzdl4=0, zxygzdls=0):
@@ -219,7 +217,7 @@ class IEMSUser(BasePage):
         :return:
         """
 
-        Logger().info('开始退租')
+        log.Logger().info('开始退租')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div[2]/div[2]/div[4]/div['
                                 '2]/table/tbody/tr[1]/td[5]/div/div/div[1]/div/input')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div[2]/div[2]/div[4]/div['
@@ -235,7 +233,7 @@ class IEMSUser(BasePage):
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div[2]/div[2]/div[4]/div['
                                 '2]/table/tbody/tr[2]/td[5]/div/div/div[1]/div/input').send_keys(zxygzdls)
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div[2]/div[3]/button').click()
-        Logger().info('输入底度')
+        log.Logger().info('输入底度')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div[2]/div/button[2]')
         self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div[2]/div/button[2]').click()
         self.driver.assert_text('x, //body/div[last()-1]/div/div[2]/div[1]/div[2]/p', '确定退租吗？请核对是否已结清费用')
@@ -245,7 +243,7 @@ class IEMSUser(BasePage):
         # self.driver.wait_play('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[7]/div/p')
         self.driver.wait_display('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[7]/div/p')
         self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div[2]/div[1]/div[1]/div/h2')
-        Logger().info('退租成功')
+        log.Logger().info('退租成功')
         sleep(1)
 
 

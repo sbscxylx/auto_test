@@ -1,39 +1,36 @@
-import datetime
-import re
-import time
-
 import paramiko
 import pymysql
 from sshtunnel import SSHTunnelForwarder
-from Comm.log import Logger
-from Conf.readconfig import ReadConfig
+import Comm
+from Comm import *
+from Conf import *
 
 
 class MysqlConn():
 
     def __init__(self):
-        self.ssh_address = ReadConfig().get_sit_mysql('ssh_address')
-        self.ssh_host = int(ReadConfig().get_sit_mysql('ssh_host'))
-        self.ssh_username = ReadConfig().get_sit_mysql('ssh_username')
-        self.ssh_pwd = ReadConfig().get_sit_mysql('ssh_pwd')
-        self.remote_bind_address = ReadConfig().get_sit_mysql('remote_bind_address')
-        self.remote_bind_address_host = int(ReadConfig().get_sit_mysql('remote_bind_address_host'))
-        self.mysql_user = ReadConfig().get_sit_mysql('mysql_user')
-        self.mysql_pwd = ReadConfig().get_sit_mysql('mysql_pwd')
-        self.mysql_host = ReadConfig().get_sit_mysql('mysql_host')
-        self.mysql_db = ReadConfig().get_sit_mysql('mysql_db')
-        # self.disabled_databases = ReadConfig().get_sit_mysql('disabled_databases')
+
+        self.ssh_address = Comm.config.sit_ssh.ssh_address
+        self.ssh_host = Comm.config.sit_ssh.ssh_host
+        self.ssh_username = Comm.config.sit_ssh.ssh_username
+        self.ssh_pwd = Comm.config.sit_ssh.ssh_pwd
+        self.remote_bind_address = Comm.config.sit_ssh.remote_bind_address
+        self.remote_bind_address_host = Comm.config.sit_ssh.remote_bind_address_host
+        self.mysql_user = Comm.config.sit_ssh.mysql_user
+        self.mysql_pwd = Comm.config.sit_ssh.mysql_pwd
+        self.mysql_host = Comm.config.sit_ssh.mysql_host
+        self.mysql_db = Comm.config.sit_ssh.mysql_db
         self.disabled_databases = {'information_schema', 'mysql', 'nacos', 'performance_schema', 'sys', 'xxl_job', 'vx_api_gateway'}
-        self.backup_path = 'backup'
+        self.backup_path = Comm.config.sit_ssh.backup_path
 
 
     def create_mysql_conn(self):
 
         server = SSHTunnelForwarder(
-            ssh_address_or_host=(self.ssh_address, int(self.ssh_host)),  # 指定ssh登录的跳转机的address
+            ssh_address_or_host=(self.ssh_address, self.ssh_host),  # 指定ssh登录的跳转机的address
             ssh_username=self.ssh_username,  # 跳转机的用户
             ssh_password=self.ssh_pwd,  # 跳转机的密码
-            remote_bind_address=(self.remote_bind_address, int(self.remote_bind_address_host)))
+            remote_bind_address=(self.remote_bind_address, self.remote_bind_address_host))
         server.start()
         conn = pymysql.connect(
             user=self.mysql_user,
@@ -55,7 +52,7 @@ class MysqlConn():
 
         conn = MysqlConn().create_mysql_conn()
         cursor = conn.cursor()
-        Logger().info('开始执行sql语句')
+        log.Logger().info('开始执行sql语句')
         cursor.execute(sql)
         res = cursor.fetchall()
         conn.commit()
@@ -64,44 +61,44 @@ class MysqlConn():
         return res
 
 
-    def MysqlConnect(sql):
-        ssh_address = ReadConfig().get_sit_mysql('ssh_address')
-        ssh_host = ReadConfig().get_sit_mysql('ssh_host')
-        ssh_username = ReadConfig().get_sit_mysql('ssh_username')
-        ssh_pwd = ReadConfig().get_sit_mysql('ssh_pwd')
-        remote_bind_address = ReadConfig().get_sit_mysql('remote_bind_address')
-        remote_bind_address_host = ReadConfig().get_sit_mysql('remote_bind_address_host')
-        mysql_user = ReadConfig().get_sit_mysql('mysql_user')
-        mysql_pwd = ReadConfig().get_sit_mysql('mysql_pwd')
-        mysql_host = ReadConfig().get_sit_mysql('mysql_host')
-        mysql_db = ReadConfig().get_sit_mysql('mysql_db')
-
-        server = SSHTunnelForwarder(
-                ssh_address_or_host=(ssh_address, int(ssh_host)),  # 指定ssh登录的跳转机的address
-                ssh_username=ssh_username,  # 跳转机的用户
-                ssh_password=ssh_pwd,  # 跳转机的密码
-                remote_bind_address=(remote_bind_address, int(remote_bind_address_host)))
-        server.start()
-        myConfig = pymysql.connect(
-            user=mysql_user,
-            passwd=mysql_pwd,
-            host=mysql_host,
-            db=mysql_db,
-            port=server.local_bind_port,
-            cursorclass=pymysql.cursors.DictCursor)
-
-
-        # 连接数据库
-        cursor = myConfig.cursor()
-
-        if sql == None:
-
-            # 查询并打印数据
-            cursor.execute(sql)
-            myConfig.commit()
-
-
-        # print(cursor.fetchall())
+    # def MysqlConnect(sql):
+    #     ssh_address = Readconfig().get_sit_mysql('ssh_address')
+    #     ssh_host = readComm.config.ReadComm.config().get_sit_mysql('ssh_host')
+    #     ssh_username = readComm.config.ReadComm.config().get_sit_mysql('ssh_username')
+    #     ssh_pwd = readComm.config.ReadComm.config().get_sit_mysql('ssh_pwd')
+    #     remote_bind_address = readComm.config.ReadComm.config().get_sit_mysql('remote_bind_address')
+    #     remote_bind_address_host = readComm.config.ReadComm.config().get_sit_mysql('remote_bind_address_host')
+    #     mysql_user = readComm.config.ReadComm.config().get_sit_mysql('mysql_user')
+    #     mysql_pwd = readComm.config.ReadComm.config().get_sit_mysql('mysql_pwd')
+    #     mysql_host = readComm.config.ReadComm.config().get_sit_mysql('mysql_host')
+    #     mysql_db = readComm.config.ReadComm.config().get_sit_mysql('mysql_db')
+    #
+    #     server = SSHTunnelForwarder(
+    #             ssh_address_or_host=(ssh_address, int(ssh_host)),  # 指定ssh登录的跳转机的address
+    #             ssh_username=ssh_username,  # 跳转机的用户
+    #             ssh_password=ssh_pwd,  # 跳转机的密码
+    #             remote_bind_address=(remote_bind_address, int(remote_bind_address_host)))
+    #     server.start()
+    #     myComm.config = pymysql.connect(
+    #         user=mysql_user,
+    #         passwd=mysql_pwd,
+    #         host=mysql_host,
+    #         db=mysql_db,
+    #         port=server.local_bind_port,
+    #         cursorclass=pymysql.cursors.DictCursor)
+    #
+    #
+    #     # 连接数据库
+    #     cursor = myComm.config.cursor()
+    #
+    #     if sql == None:
+    #
+    #         # 查询并打印数据
+    #         cursor.execute(sql)
+    #         myComm.config.commit()
+    #
+    #
+    #     # print(cursor.fetchall())
 
 
     def ssh_transport(self):
@@ -147,16 +144,16 @@ class MysqlConn():
             list,数据库名称列表
         """
 
-        Logger().info('读取全部数据库名称..')
+        log.Logger().info('读取全部数据库名称..')
         res = self.mysql_sql(sql='show databases')
         databases = {item['Database'] for item in res}
         databases = list(databases - self.disabled_databases)
-        Logger().info('读取完毕，数据库列表如下：{}'.format(databases))
+        log.Logger().info('读取完毕，数据库列表如下：{}'.format(databases))
 
         return databases
 
 
-    def backup_databases2(self, database, tables):
+    def backup_databases(self, tables):
         """
         备份指定数据库的数据和表结构
         :param database: 待备份的数据库名称 iems
@@ -164,129 +161,55 @@ class MysqlConn():
         :return:
         """
 
-        channel = self.ssh_connect()
-        for table in tables:
-            timestr = time.strftime("%Y%m%d", time.localtime(time.time()))
-            backup_file = database[0] + table + timestr
-            Logger().info(backup_file)
-            # backup_cmd = f"mysqldump -u{self.mysql_user} -p --default-character-set=utf8 {database[0]} {table} | gzip > /www/backup/database/{backup_file}.sql.gz"
-            backup_cmd = f"mysqldump -p --default-character-set=utf8 {database[0]} {table} | gzip > /www/backup/database/{backup_file}.sql.gz"
-            Logger().info(backup_cmd)
-            while True:
-                time.sleep(1)
-                rst = channel.recv(1024).decode('utf-8')
-                Logger().info(rst)
-                if 'Last login' in rst:
-                    channel.send(backup_cmd + "\n")
-                    time.sleep(1)
-                    rst2 = channel.recv(1024).decode('utf-8')
-                    Logger().info(rst2 + '2')
-                    if 'Enter password' in rst2:
-                        channel.send(self.mysql_pwd + '\n')
-                        time.sleep(1)
-                        Logger().info('输入密码{}'.format(self.mysql_pwd))
-                        print('输入数据库密码....')
-                        rst3 = channel.recv(1024).decode('utf-8')
-                        if 'error' in rst3:
-                            Logger().info('数据库密码错误，备份失败')
-                            break
-                        Logger().info('开始备份数据库：{}.表:{}...'.format(database, table))
-                        print("开始备份....")
-                        time.sleep(10)
-                        # rst4 = channel.recv(1024).decode('utf-8')
-                        # print(rst4)
-                        # Logger().info(rst4)
-                        Logger().info('数据库：{}.表:{}备份完毕'.format(database, table))
-                        print("备份完成....")
-                        break
-                        # if 'password' not in rst4:
-                        #     Logger().info('数据库：{}.表:{}备份完毕'.format(database, table))
-                        #     print("备份成功....")
-                        #     break
-                        # else:
-                        #     Logger().info('备份失败')
-                        #     print("备份失败")
-                        #     break
-                else:
-                    channel.send(backup_cmd + "\n")
-                    time.sleep(1)
-                    rst2 = channel.recv(1024).decode('utf-8')
-                    Logger().info(rst2 + '2')
-                    if 'Enter password' in rst2:
-                        channel.send(self.mysql_pwd + '\n')
-                        time.sleep(1)
-                        Logger().info('输入密码{}'.format(self.mysql_pwd))
-                        print('输入数据库密码....')
-                        rst3 = channel.recv(1024).decode('utf-8')
-                        if 'error' in rst3:
-                            Logger().info('数据库密码错误，备份失败')
-                            break
-                        Logger().info('开始备份数据库：{}.表:{}...'.format(database, table))
-                        print("开始备份....")
-                        time.sleep(10)
-                        # rst4 = channel.recv(1024).decode('utf-8')
-                        # print(rst4)
-                        # Logger().info(rst4)
-                        Logger().info('数据库：{}.表:{}备份完毕'.format(database, table))
-                        print("备份完成....")
-                        break
-        channel.close()
-
-
-    def backup_databases(self, database, tables):
-        """
-        备份指定数据库的数据和表结构
-        :param database: 待备份的数据库名称 iems
-        :param table: 待备份的数据库表
-        :return:
-        """
+        database = self.read_all_databases()
         self.databases_rm()
         backup_files = []
         channel = self.ssh_connect()
         for table in tables:
             timestr = time.strftime("%Y%m%d", time.localtime(time.time()))
             backup_file = database[0] + table + timestr
-            Logger().info(backup_file)
+            log.Logger().info(backup_file)
             # backup_cmd = f"mysqldump -u{self.mysql_user} -p --default-character-set=utf8 {database[0]} {table} | gzip > /www/backup/database/{backup_file}.sql.gz"
-            backup_cmd = f"mysqldump -p --default-character-set=utf8 {database[0]} {table} | gzip > /www/backup/database/{backup_file}.sql.gz"
-            Logger().info(backup_cmd)
+            backup_cmd = f"mysqldump -p --default-character-set=utf8 {database[0]} {table} | gzip > {self.backup_path}/{backup_file}.sql.gz"
+            log.Logger().info(backup_cmd)
             while True:
                 channel.send(backup_cmd + "\n")
                 time.sleep(1)
                 channel.send(self.mysql_pwd + '\n')
                 time.sleep(1)
-                Logger().info('开始备份数据库：{}.表:{}...'.format(database, table))
+                log.Logger().info('开始备份数据库：{}.表:{}...'.format(database, table))
                 rst = channel.recv(1024).decode('utf-8')
-                Logger().info(rst)
+                log.Logger().info(rst)
                 # time.sleep(10)
-                Logger().info('数据库：{}.表:{}备份完毕'.format(database, table))
+                log.Logger().info('数据库：{}.表:{}备份完毕'.format(database, table))
                 backup_files.append(backup_file)
                 print('数据库：{}.表:{}备份完毕'.format(database, table))
                 break
         channel.close()
-        Logger().info(backup_files)
+        log.Logger().info(backup_files)
         return backup_files
 
-    def databases_rm(self, linuxPath='/www/backup/database', rm_time='atime +1'):
+
+    def databases_rm(self, rm_time='atime +1'):
         """
         删除备份文件
-        :param linuxPath: 路径
         :param rm_time: 日期格式“amin +10”, "atime +1"
         :return:
         """
 
+        linuxPath = self.backup_path
         channel = self.ssh_connect()
         channel.send('cd {}'.format(linuxPath) + '\n')
         time.sleep(1)
         channel.send('find . -a{} -name "*.sql.gz"'.format(rm_time) + "\n")
         time.sleep(1)
         rst = channel.recv(1024).decode('utf-8')
-        Logger().info('删除备份文件{}'.format(rst))
+        log.Logger().info('删除备份文件{}'.format(rst))
         time.sleep(1)
         channel.send('find . -a{} -name "*.sql.gz" -delete'.format(rm_time) + '\n')
 
 
-    def restore_databases(self, database, restore_files, wait=8):
+    def restore_databases(self, restore_files, wait=8):
         """
         还远数据库表
         :param wait:
@@ -295,15 +218,14 @@ class MysqlConn():
         :return:
         """
 
-        # timestr = time.strftime("%Y%m%d", time.localtime(time.time()))
-        # restore_file = database[0] + timestr
-        # print(restore_file)
+        restore_path = self.backup_path
+        database = self.read_all_databases()
         channel = self.ssh_connect()
         for restore_file in restore_files:
-            Logger().info('开始还原数据库{}...'.format(database))
+            log.Logger().info('开始还原数据库{}...'.format(database))
 
-            restore_cmd = f"gunzip < /www/backup/database/{restore_file}.sql.gz | mysql -u {self.mysql_user} -p {database[0]}"
-            Logger().info(restore_cmd)
+            restore_cmd = f"gunzip < {restore_path}/{restore_file}.sql.gz | mysql -u {self.mysql_user} -p {database[0]}"
+            log.Logger().info(restore_cmd)
             channel.send(restore_cmd + "\n")
             time.sleep(1)
             channel.send(self.mysql_pwd + "\n")
@@ -335,4 +257,4 @@ if __name__ == '__main__':
     # databases = MysqlConn().read_all_databases()
     # backup_files = MysqlConn().backup_databases(databases, ['wx_user', 'sys_user'])
     # MysqlConn().restore_databases(databases, backup_files)
-    MysqlConn().databases_rm('/www/backup/database', 'min +1')
+    MysqlConn().databases_rm('min +1')

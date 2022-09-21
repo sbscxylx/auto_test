@@ -1,10 +1,4 @@
-import time
-import unittest
-import warnings
-import allure
-import os
-from Comm.data import ReadData
-from Comm.mysql_backup import MysqlConn
+from IemsTestcase import *
 from IemsPage.basePage import *
 from IemsPage.iems_eqp.iems_eqp import IEMSEquipment
 from IemsPage.iems_login.iems_login import IemsLogin
@@ -15,17 +9,6 @@ from IemsPage.iems_user.iems_user import IEMSUser
 @allure.feature('测试a用户相关')
 class TestIEMSUser(unittest.TestCase):
     """测试档案相关"""
-
-
-    # databases = MysqlConn().read_all_databases()
-    # backup_files = MysqlConn().backup_databases(databases,
-    #                                             ['bar_container', 'mbr_consumer_config', 'mbr_consumer', 'mbr_cons_cntr_billing_scheme', 'mbr_inner_account'])
-
-    test_login_data = ReadData('test_login_data.xlsx').read_excel()
-    test_user_data = ReadData('test_open_user_data.xlsx').read_excel()
-    test_project_data = ReadData('test_project_data.xlsx').read_excel()
-    Logger().info(test_user_data)
-    driver = Base('c')
 
     def check_assert(self, actual, expect):
         """
@@ -39,59 +22,63 @@ class TestIEMSUser(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        Logger().rm_log()
+        cls.login = TestData.login_data
+        cls.project = TestData.project_data
+        cls.user = TestData.user_data
+        log.Logger().info(f'登录信息{cls.login}')
+        log.Logger().info(f'项目信息{cls.project}')
+        log.Logger().info(f'用户信息{cls.user}')
+        cls.driver = Base('c')
 
     def setUp(self) -> None:
         warnings.simplefilter('ignore', ResourceWarning)
 
-    @Screen(driver)
+    @Screen
     @allure.story('用户档案')
     @allure.title('测试a用户开户')
     def test_01_open_user(self):
         """用户开户"""
 
         with allure.step("登录a2.4"):
-            IemsLogin(self.driver).a_login_new(self.test_login_data[2]['user'], self.test_login_data[2]['pwd'])
+            IemsLogin(self.driver).a_login_new(self.login.user[2], self.login.pwd[2])
         with allure.step("点击运营界面开户按钮，进入用户开户页面"):
             self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div[3]/div/div[1]').click()
         with allure.step("选择项目"):
-            IEMSUser(self.driver).user_project(self.test_project_data[2]['project_name'])
+            IEMSUser(self.driver).user_project(self.project.bar_project_name[2])
         with allure.step("用户开户"):
-            IEMSUser(self.driver).open_user_a(self.test_user_data[0]['mbrConsName'], self.test_user_data[0]['contacter'],
-                                            self.test_user_data[0]['contactMobile'])
+            IEMSUser(self.driver).open_user_a(self.user.mbrConsName, self.user.contacter, self.user.contacterMobile)
         actual = self.driver.get_element(
             'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[1]/div/div[1]/div/div/h2').text
         mbrConsName = self.driver.get_element(
             'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[1]/div/div[2]/div/form/div[2]/div/div').text
         with allure.step("判断开户是否成功"):
             self.check_assert(actual, '开户成功')
-            self.check_assert(mbrConsName, self.test_user_data[0]['mbrConsName'])
+            self.check_assert(mbrConsName, self.user.mbrConsName)
         with allure.step("进入用户档案界面"):
             IEMSUser(self.driver).enter_user()
         with allure.step("点击用户名搜索"):
             self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div['
                                     '2]/table/thead/tr/th[3]/div/span/span/span').click()
         with allure.step("搜索刚开户的用户号"):
-            IEMSEquipment(self.driver).select_index(self.test_user_data[0]['mbrConsName'])
+            IEMSEquipment(self.driver).select_index(self.user.mbrConsName)
         self.driver.wait_display('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[8]/div/p')
         with allure.step("核对用户档案界面是否有该数据"):
             mbrConsName = self.driver.get_element(
                 'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[3]/table/tbody/tr/td[3]/div').text
-            print(mbrConsName)
-            self.check_assert(mbrConsName, self.test_user_data[0]['mbrConsName'])
+            self.check_assert(mbrConsName, self.user.mbrConsName)
 
-    @Screen(driver)
+    @Screen
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story('用户档案')
     @allure.title('测试a用户变更')
     def test_02_change_user(self):
         """测试变更"""
-        # IemsLogin(self.driver).a_login_new(self.test_login_data[2]['user'], self.test_login_data[2]['pwd'])
+        # IemsLogin(self.driver).a_login_new(self.login.user[2], self.login.pwd[2])
         # IEMSUser(self.driver).enter_user()
         # IEMSUser(self.driver).user_project('发布回归')
         # self.driver.get_element(
         #     'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
-        # IEMSEquipment(self.driver).select_index(self.test_user_data[0]['mbrConsName'])
+        # IEMSEquipment(self.driver).select_index(self.user.mbrConsName)
         with allure.step('新开户的用户点击变更'):
             self.driver.move_to_click('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[5]/div['
                                       '2]/table/tbody/tr/td[17]/div/button[1]')
@@ -103,28 +90,27 @@ class TestIEMSUser(unittest.TestCase):
             'x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div/div[2]/div[1]/div[2]/div/form/div[2]/div/div').text
         with allure.step('核对是否变更成功'):
             self.check_assert(actual, '变更成功')
-            self.check_assert(mbrConsName, self.test_user_data[0]['mbrConsName'] + '变更')
+            self.check_assert(mbrConsName, self.user.mbrConsName + '变更')
         with allure.step('进入用户档案'):
             IEMSUser(self.driver).enter_user()
         with allure.step("点击用户名搜索"):
             self.driver.get_element(
                 'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/table/thead/tr/th['
                 '3]/div/span/span/span').click()
-            IEMSEquipment(self.driver).select_index(self.test_user_data[0]['mbrConsName'])
+            IEMSEquipment(self.driver).select_index(self.user.mbrConsName)
         self.driver.wait_display('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[8]/div/p')
         with allure.step("核对用户档案界面是否变更成功"):
             mbrConsName = self.driver.get_element(
                 'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[3]/table/tbody/tr/td[3]/div').text
-            print(mbrConsName)
-            self.check_assert(mbrConsName, self.test_user_data[0]['mbrConsName'] + '变更')
+            self.check_assert(mbrConsName, self.user.mbrConsName + '变更')
 
-    @Screen(driver)
+    @Screen
     @allure.story('账户档案')
     @allure.title('测试a现金充值')
     def test_03_recharge_user(self):
         """测试现金充值"""
 
-        # IemsLogin(self.driver).a_login_new(self.test_login_data[2]['user'], self.test_login_data[2]['pwd'])
+        # IemsLogin(self.driver).a_login_new(self.login.user[2], self.login.pwd[2])
         # IEMSUser(self.driver).enter_user()
         # IEMSUser(self.driver).user_project('发布回归')
         with allure.step("点击账户档案"):
@@ -135,7 +121,7 @@ class TestIEMSUser(unittest.TestCase):
         with allure.step("点击用户名搜索"):
             self.driver.move_to_click('x, //*[@id="app"]/div/div[2]/section/div/div[3]/div[1]/div['
                                       '2]/table/thead/tr/th[4]/div/span[1]/span/span')
-            IEMSEquipment(self.driver).select_index(self.test_user_data[0]['mbrConsName'])
+            IEMSEquipment(self.driver).select_index(self.user.mbrConsName)
         with allure.step("点击充值按钮"):
             self.driver.get_element('x, //*[@id="app"]/div/div[2]/section/div/div[3]/div[1]/div[5]/div['
                                     '2]/table/tbody/tr/td[12]/div/div/button[1]').click()
@@ -158,15 +144,15 @@ class TestIEMSUser(unittest.TestCase):
                                                  '2]/div/div/div[1]/div[7]/div[2]').text
             self.check_assert(pay_status, '支付成功')
 
-    @Screen(driver)
+    @Screen
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story('账户档案')
     @allure.title('测试a用户退款')
     def test_04_refund_user(self):
         """测试退款"""
-        # IemsLogin(self.driver).a_login_new(self.test_login_data[2]['user'], self.test_login_data[2]['pwd'])
+        # IemsLogin(self.driver).a_login_new(self.login.user[2], self.login.pwd[2])
         # IEMSUser(self.driver).enter_user()
-        IEMSUser(self.driver).user_project(self.test_project_data[2]['project_name'])
+        IEMSUser(self.driver).user_project(self.project.bar_project_name[2])
         with allure.step("进入账户档案界面"):
             self.driver.move_to_click(
                 'x, //*[@id="app"]/div/div[1]/div[2]/div[1]/div/ul/div[2]/div/div/li/ul/div[2]/div/li/span')
@@ -184,17 +170,17 @@ class TestIEMSUser(unittest.TestCase):
                                              '2]/div/div[1]/div[1]/div/div/h2').text
             self.check_assert(actual, '退款成功')
 
-    @Screen(driver)
+    @Screen
     @allure.story('用户档案')
     @allure.title('测试a用户退租')
     def test_05_exit_user(self):
         """测试退租"""
-        # IemsLogin(self.driver).a_login_new(self.test_login_data[2]['user'], self.test_login_data[2]['pwd'])
+        # IemsLogin(self.driver).a_login_new(self.login.user[2], self.login.pwd[2])
         # IEMSUser(self.driver).enter_user()
         # IEMSUser(self.driver).user_project('发布回归')
         # self.driver.get_element(
         #     'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/table/thead/tr/th[3]/div/span/span/span').click()
-        # IEMSEquipment(self.driver).select_index(self.test_user_data[0]['mbrConsName'])
+        # IEMSEquipment(self.driver).select_index(self.user.mbrConsName)
         # self.driver.wait_until('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[5]/div[2]/table/tbody/tr/td[17]/div/button[2]')
         with allure.step("进入用户档案界面"):
             IEMSUser(self.driver).enter_user()
@@ -210,14 +196,14 @@ class TestIEMSUser(unittest.TestCase):
             'x, //*[@id="app"]/div/div[2]/section/div/section/main/div/div[2]/div[1]/div[2]/div/form/div[2]/div/div').text
         with allure.step("核对是否退租成功"):
             self.check_assert(actual, '退租成功')
-            self.check_assert(mbrConsName, self.test_user_data[0]['mbrConsName'] + '变更')
+            self.check_assert(mbrConsName, self.user.mbrConsName + '变更')
         with allure.step("进入用户档案界面"):
             IEMSUser(self.driver).enter_user()
         with allure.step("查找刚开户的用户"):
             self.driver.get_element(
                 'x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[2]/table/thead/tr/th['
                 '3]/div/span/span/span').click()
-            IEMSEquipment(self.driver).select_index(self.test_user_data[0]['mbrConsName'])
+            IEMSEquipment(self.driver).select_index(self.user.mbrConsName)
             time.sleep(1)
         # self.driver.wait_display('x, //*[@id="app"]/div/div[2]/section/div/div[2]/div/div[2]/div[8]/div/p')
         with allure.step("核对用户档案界面是否还有该用户"):
@@ -234,7 +220,6 @@ class TestIEMSUser(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        # MysqlConn().restore_databases(cls.databases, cls.backup_files)
         cls.driver.driver.quit()
 
 

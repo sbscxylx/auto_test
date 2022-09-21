@@ -32,6 +32,32 @@ class MySqlDB(BaseModel):
     port: Union[int, None] = 3306
 
 
+class SitSsh(BaseModel):
+    ssh_address: str
+    ssh_host: int
+    ssh_username: str
+    ssh_pwd: str
+    remote_bind_address: str
+    remote_bind_address_host: int
+    mysql_user: str
+    mysql_pwd: str
+    mysql_host: str
+    mysql_db: str
+    backup_path: str
+
+
+class Log(BaseModel):
+    log_level: str
+    log_format: Text
+
+
+class Url(BaseModel):
+    sit_old_url: Text
+    sit_new_url: Text
+    a_old_url: Text
+    a_new_url: Text
+
+
 class Email(BaseModel):
     send_user: Union[Text, None]
     email_host: Union[Text, None]
@@ -50,6 +76,23 @@ class projectData(BaseModel):
     businessMobile: Text = None
 
 
+class LoginData(BaseModel):
+    user: list = None
+    pwd: list = None
+
+
+class UserData(BaseModel):
+    mbrConsName: str
+    contacter: str
+    contacterMobile: str
+
+
+class MeasureData(BaseModel):
+    barMeasureNO: list
+    commType: list
+    gatewayNo: list
+
+
 class Config(BaseModel):
     project_name: Text
     env: Text
@@ -65,7 +108,17 @@ class Config(BaseModel):
     real_time_update_test_cases: bool = False
     host: Text
     app_host: Union[Text, None]
+    sit_ssh: "SitSsh"
+    log: "Log"
+    url: "Url"
 
 
-class Test(BaseModel):
+class TestData(BaseModel):
     project_data: "projectData"
+    login_data: "LoginData"
+    user_data: "UserData"
+    measure_data: "MeasureData"
+
+
+
+

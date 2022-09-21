@@ -1,5 +1,5 @@
-import os
 from typing import Text
+from Comm import *
 
 
 def root_path():

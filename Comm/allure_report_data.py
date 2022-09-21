@@ -1,7 +1,8 @@
 import json
 from typing import List, Text
-from Comm.path import *
-from Conf.models import TestMetrics
+import Comm
+from Comm import *
+from Conf import *
 
 
 class AllureFileClean:
@@ -12,7 +13,7 @@ class AllureFileClean:
         """ 获取所有 allure 报告中执行用例的情况"""
         # 将所有数据都收集到files中
         files = []
-        for i in get_all_files(ensure_path_sep("\\Results\\html2\\data\\test-cases")):
+        for i in get_path.get_all_files(get_path.ensure_path_sep("\\Results\\html\\data\\test-cases")):
             # print(i)
             with open(i, 'r', encoding='utf-8') as file:
                 date = json.load(file)
@@ -40,10 +41,10 @@ class AllureFileClean:
         return values
 
     @classmethod
-    def get_case_count(cls) -> "TestMetrics":
+    def get_case_count(cls) -> "models.TestMetrics":
         """ 统计用例数量 """
         try:
-            file_name = ensure_path_sep("\\Results\\html2\\widgets\\summary.json")
+            file_name = Comm.get_path.ensure_path_sep("\\Results\\html\\widgets\\summary.json")
             # print(file_name)
             with open(file_name, 'r', encoding='utf-8') as file:
                 data = json.load(file)
@@ -74,7 +75,7 @@ class AllureFileClean:
             # print(run_case_data)
             run_case_data['time'] = _time if run_case_data['total'] == 0 else round(_time['duration'] / 1000, 2)
             # print(run_case_data)
-            return TestMetrics(**run_case_data)
+            return models.TestMetrics(**run_case_data)
         except FileNotFoundError as exc:
             raise FileNotFoundError(
                 "程序中检查到您未生成allure报告，"

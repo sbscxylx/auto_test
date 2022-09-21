@@ -1,13 +1,5 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-# @Time   : 2022/3/28 15:47
-# @Author : 余少琪
-"""
-
-import time
+from Comm import *
 from typing import Text
-from datetime import datetime
 
 
 def count_milliseconds():
@@ -15,8 +7,8 @@ def count_milliseconds():
     计算时间
     :return:
     """
-    access_start = datetime.now()
-    access_end = datetime.now()
+    access_start = datetime.datetime.now()
+    access_end = datetime.datetime.now()
     access_delta = (access_end - access_start).seconds * 1000
     return access_delta
 
@@ -29,7 +21,7 @@ def timestamp_conversion(time_str: Text) -> int:
     """
 
     try:
-        datetime_format = datetime.strptime(str(time_str), "%Y-%m-%d %H:%M:%S")
+        datetime_format = datetime.datetime.strptime(str(time_str), "%Y-%m-%d %H:%M:%S")
         timestamp = int(
             time.mktime(datetime_format.timetuple()) * 1000.0
             + datetime_format.microsecond / 1000.0
@@ -63,7 +55,7 @@ def now_time():
 
 def now_time_day():
     """
-    获取当前时间, 日期格式: 2021-12-11
+    获取当前日期, 日期格式: 2021-12-11
     :return:
     """
     localtime = time.strftime("%Y-%m-%d", time.localtime())

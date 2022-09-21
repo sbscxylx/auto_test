@@ -1,8 +1,5 @@
-import logging
-import time
-
+from Comm import *
 import paramiko
-# import ssh
 
 
 def sshclient_execmd():

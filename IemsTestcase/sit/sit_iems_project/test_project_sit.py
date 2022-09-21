@@ -1,27 +1,13 @@
-import time, datetime
-import unittest
-import warnings
-import os
-import allure
-import self
-
-from Comm.data import ReadData
-from Comm.mysql_backup import MysqlConn
-from Conf.yaml_control import *
-from IemsPage.basePage import *
 from IemsPage.iems_eqp.iems_eqp import IEMSEquipment
-from IemsPage.iems_project.iems_project import IEMSProject
 from IemsPage.iems_login.iems_login import IemsLogin
+from IemsPage.iems_project.iems_project import IEMSProject
+from IemsTestcase import *
 
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.feature('测试sit项目相关')
 class TestIEMSProject(unittest.TestCase):
     """测试sit项目级相关"""
-
-
-
-    # driver = Base('c')
 
 
     def check_assert(self, actual, expect):
@@ -31,22 +17,19 @@ class TestIEMSProject(unittest.TestCase):
         :param expect:
         :return:
         """
-        Logger().info('预期数据{}, 实际数据{}'.format(expect, actual))
+        log.Logger().info('预期数据{}, 实际数据{}'.format(expect, actual))
         self.assertEqual(expect, actual)
 
 
     @classmethod
     def setUpClass(cls):
 
-        cls.databases = MysqlConn().read_all_databases()
-        cls.backup_files = MysqlConn().backup_databases(cls.databases, ['bar_project'])
-        cls.test_login_data = ReadData('test_login_data.xlsx').read_excel()
-        cls.test_project_data = ReadData('test_project_data.xlsx').read_excel()
-        cls.project = GetYamlData(ensure_path_sep("/IemsTestcase/Testdata/test_data.yaml")).circle_yaml_datas().project_data
-        Logger().info(cls.test_project_data)
-        Logger().rm_log()
+        cls.backup_files = mysql_backup.MysqlConn().backup_databases(['bar_project'])
+        cls.login = TestData.login_data
+        cls.project = TestData.project_data
+        log.Logger().info(f'登录信息{cls.login}')
+        log.Logger().info(f'项目信息{cls.project}')
         cls.driver = Base('c')
-
 
 
     def setUp(self) -> None:
@@ -60,7 +43,7 @@ class TestIEMSProject(unittest.TestCase):
         """测试sit新建项目"""
 
         with allure.step("登录sit2.0"):
-            IemsLogin(self.driver).iems_login_old(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+            IemsLogin(self.driver).iems_login_old(self.login.user[0], self.login.pwd[0])
         with allure.step("进入项目列表"):
             IEMSEquipment(self.driver).enter_project()
             self.driver.wait_until('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div[1]/div/li/ul/div[last()]/li/span')
@@ -72,12 +55,6 @@ class TestIEMSProject(unittest.TestCase):
                                                  self.project.direct, self.project.directMobile,
                                                  self.project.business, self.project.businessMobile,
                                                  self.driver.date_day('plus', 1))
-        # with allure.step("新建项目"):
-        #     IEMSProject(self.driver).add_project(self.test_project_data[3]['project_name'], self.driver.date_day(index=1),
-        #                                          self.driver.date_day(), self.test_project_data[3]['Address'],
-        #                                          self.test_project_data[3]['direct'], self.test_project_data[3]['directMobile'],
-        #                                          self.test_project_data[3]['business'], self.test_project_data[3]['businessMobile'],
-        #                                          self.driver.date_day('plus', 1))
         with allure.step("点击关闭"):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[8]/div/div[2]/button/span').click()
         self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[2]/div')
@@ -85,7 +62,6 @@ class TestIEMSProject(unittest.TestCase):
             projectName = self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[2]/div').text
             self.check_assert(projectName, self.project.bar_project_name[3])
 
-    @unittest.skip('x')
     @Screen
     @allure.story('项目列表')
     @allure.severity(allure.severity_level.NORMAL)
@@ -94,7 +70,7 @@ class TestIEMSProject(unittest.TestCase):
         """测试sit编辑项目"""
 
         # with allure.step("登录sit2.0"):
-        #     IemsLogin(self.driver).iems_login_old(self.test_login_data[0]['user'], self.test_login_data[0]['pwd'])
+        #     IemsLogin(self.driver).iems_login_old(self.login.user[0], self.login.pwd[0])
         # with allure.step("进入项目列表"):
         #     IEMSEquipment(self.driver).enter_project()
         #     self.driver.wait_until('x, //*[@id="menu-container"]/div[1]/div/ul/div/div[1]/div/li/ul/div[1]/div/li/ul/div[last()]/li/span')
@@ -103,28 +79,28 @@ class TestIEMSProject(unittest.TestCase):
             self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[3]/form/div[1]/label')
             self.driver.assert_text('x, //*[@id="appMain-container"]/div[1]/div[3]/form/div[1]/label', '项目名称')
             projectName = self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[3]/form/div[1]/div/div/input').text
-            Logger().info('项目名称{}'.format(projectName))
+            log.Logger().info('项目名称{}'.format(projectName))
         with allure.step('修改项目名称'):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[3]/form/div[1]/div/div/input').send_keys('编辑')
         with allure.step('修改项目资料'):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[3]/div/button').click()
-            Logger().info('点击下一步')
+            log.Logger().info('点击下一步')
         with allure.step('项目地图定位'):
             self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[4]/div[1]/div[3]')
             if self.driver.text_in('x, //*[@id="appMain-container"]/div[1]/div[4]/div[1]/div[3]', '详细地址'):
                 self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[4]/div[2]/button[2]/span').click()
-                Logger().info('点击下一步')
+                log.Logger().info('点击下一步')
         with allure.step('负责人信息'):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[5]/div/button[2]/span').click()
-            Logger().info('点击下一步')
+            log.Logger().info('点击下一步')
         with allure.step('维保截止时间'):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[6]/div/button[2]/span').click()
-            Logger().info('点击下一步')
+            log.Logger().info('点击下一步')
         with allure.step('确认保存信息'):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[7]/div/div[2]/button[2]/span').click()
-            Logger().info('点击确认保存信息')
+            log.Logger().info('点击确认保存信息')
             self.driver.wait_until('x, //*[@id="appMain-container"]/div[1]/div[8]/div/div[2]/button/span')
-            Logger().info('保存成功')
+            log.Logger().info('保存成功')
             time.sleep(1)
         with allure.step("点击关闭"):
             self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[8]/div/div[2]/button/span').click()
@@ -134,8 +110,8 @@ class TestIEMSProject(unittest.TestCase):
                 'x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[2]/div')
         with allure.step("验证是否新建成功"):
             projectName = self.driver.get_element('x, //*[@id="appMain-container"]/div[1]/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[2]/div').text
-            Logger().info("修改后项目名称：{}".format(projectName))
-            self.check_assert(projectName, self.test_project_data[3]['project_name'] + '编辑')
+            log.Logger().info("修改后项目名称：{}".format(projectName))
+            self.check_assert(projectName, self.project.bar_project_name[3] + '编辑')
 
 
     def tearDown(self) -> None:
@@ -145,7 +121,7 @@ class TestIEMSProject(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         try:
-            MysqlConn().restore_databases(cls.databases, cls.backup_files)
+            mysql_backup.MysqlConn().restore_databases(cls.backup_files)
             pass
         except:
             pass
