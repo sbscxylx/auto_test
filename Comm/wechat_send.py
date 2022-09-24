@@ -1,8 +1,8 @@
 import os
 import sys
 import requests
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # 父路径的父路径
+import Comm
 from Comm import *
 from Conf import exceptions
 from Conf.models import TestMetrics
@@ -53,7 +53,7 @@ class WeChatSend:
         :return:
         """
         _data = {"msgtype": "markdown", "markdown": {"content": content}}
-        res = requests.post(url=config.wechat.webhook, json=_data, headers=self.headers)
+        res = requests.post(url=Comm.config.wechat.webhook, json=_data, headers=self.headers)
         if res.json()['errcode'] != 0:
             log.Logger().error(res.json())
             raise exceptions.SendMessageError("企业微信「MarkDown类型」消息发送失败")
@@ -80,10 +80,21 @@ class WeChatSend:
             log.Logger().error(res.json())
             raise exceptions.SendMessageError("企业微信「file类型」消息发送失败")
 
-    def send_wechat_notification(self):
+    def report(self, type='jenkins'):
+
+        if type == 'jenkins':
+            report = f'(http://{get_local_ip.get_host_ip()}:8080/jenkins/job/{self.JOB_NAME}/{self.BUILD_NUMBER}/allure/)'
+            return report
+        else:
+            report = f'(http://localhost:63342/UIAutoTest/Results/html/index.html)'
+            # report = f'(http://transact.netsarang.com:9999/index.html)'
+            return report
+
+    def send_wechat_notification(self, report):
         """ 发送企业微信通知 """
-        text = f"""【自动化通知】
-                                    >测试负责人：@{config.tester_name}
+
+        text = f"""{Comm.config.project_name}【自动化通知】
+                                    >测试负责人：@{Comm.config.tester_name}
                                     >
                                     > **执行结果**
                                     ><font color=\"info\">成  功  率  : {self.metrics.pass_rate}%</font>
@@ -94,7 +105,7 @@ class WeChatSend:
                                     >跳过用例数：<font color=\"warning\">{self.metrics.skipped}个</font>
                                     >用例执行时长：<font color=\"warning\">{self.metrics.time} s</font>
                                     >时间：<font color=\"comment\">{time_control.now_time()}</font>
-                                    >测试报告，点击查看>>[测试报告入口](http://{get_local_ip.get_host_ip()}:8080/jenkins/job/{self.JOB_NAME}/{self.BUILD_NUMBER}/allure/)
+                                    >测试报告，点击查看>>[测试报告入口]{report}
                                     >非相关负责人员可忽略此消息。"""
 
         WeChatSend(allure_report_data.AllureFileClean().get_case_count()).send_markdown(text)
@@ -102,4 +113,5 @@ class WeChatSend:
 
 if __name__ == '__main__':
     # print(ensure_path_sep('/Results/html/index.html'))
-    WeChatSend(allure_report_data.AllureFileClean().get_case_count()).send_wechat_notification()
+    report = WeChatSend(allure_report_data.AllureFileClean().get_case_count()).report('py')
+    WeChatSend(allure_report_data.AllureFileClean().get_case_count()).send_wechat_notification(report)

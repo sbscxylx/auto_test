@@ -7,7 +7,7 @@ from IemsPage.iems_user.iems_user import IEMSUser
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.feature('测试a用户相关')
-class TestIEMSUser(unittest.TestCase):
+class TestIemsUserA(unittest.TestCase):
     """测试档案相关"""
 
     def check_assert(self, actual, expect):

@@ -6,7 +6,7 @@ from IemsTestcase import *
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.feature('测试sit项目相关')
-class TestIEMSProject(unittest.TestCase):
+class TestIemsProjectSit(unittest.TestCase):
     """测试sit项目级相关"""
 
 

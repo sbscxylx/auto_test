@@ -5,6 +5,8 @@ import warnings
 import allure
 import pytest
 from IemsPage.basePage import *
+import sys
+
 
 _data = yaml_control.GetYamlData(get_path.ensure_path_sep("/IemsTestcase/Testdata/test_data.yaml")).get_yaml_data()
 TestData = models.TestData(**_data)

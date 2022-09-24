@@ -3,7 +3,6 @@ import pymysql
 from sshtunnel import SSHTunnelForwarder
 import Comm
 from Comm import *
-from Conf import *
 
 
 class MysqlConn():
@@ -20,9 +19,9 @@ class MysqlConn():
         self.mysql_pwd = Comm.config.sit_ssh.mysql_pwd
         self.mysql_host = Comm.config.sit_ssh.mysql_host
         self.mysql_db = Comm.config.sit_ssh.mysql_db
-        self.disabled_databases = {'information_schema', 'mysql', 'nacos', 'performance_schema', 'sys', 'xxl_job', 'vx_api_gateway'}
+        self.disabled_databases = {'information_schema', 'mysql', 'nacos', 'performance_schema', 'sys', 'xxl_job',
+                                   'vx_api_gateway'}
         self.backup_path = Comm.config.sit_ssh.backup_path
-
 
     def create_mysql_conn(self):
 
@@ -42,7 +41,6 @@ class MysqlConn():
 
         return conn
 
-
     def mysql_sql(self, sql):
         """
         连接后可执行sql语句
@@ -59,7 +57,6 @@ class MysqlConn():
         cursor.close()
         conn.close()
         return res
-
 
     # def MysqlConnect(sql):
     #     ssh_address = Readconfig().get_sit_mysql('ssh_address')
@@ -100,7 +97,6 @@ class MysqlConn():
     #
     #     # print(cursor.fetchall())
 
-
     def ssh_transport(self):
         """
 
@@ -109,7 +105,6 @@ class MysqlConn():
         transport = paramiko.Transport((self.ssh_address, self.ssh_host))  # s.set_missing_host_key_policy()
         transport.connect(username=self.ssh_username, password=self.ssh_pwd)
         return transport
-
 
     def ssh_connect(self):
         """
@@ -123,7 +118,6 @@ class MysqlConn():
         channel = ssh.invoke_shell(width=1024, height=100)
         return channel
 
-
     def ssh_sftp(self, linux_path):
         """
         获取linux文件
@@ -135,7 +129,6 @@ class MysqlConn():
         sftp_client = paramiko.SFTPClient.from_transport(transport)
         remote_file = sftp_client.listdir(linux_path)
         return remote_file
-
 
     def read_all_databases(self):
         """
@@ -152,7 +145,6 @@ class MysqlConn():
 
         return databases
 
-
     def backup_databases(self, tables):
         """
         备份指定数据库的数据和表结构
@@ -162,9 +154,15 @@ class MysqlConn():
         """
 
         database = self.read_all_databases()
-        self.databases_rm()
         backup_files = []
         channel = self.ssh_connect()
+        time.sleep(1)
+        rm_file_cmd = f"""
+            find {self.backup_path} -mtime +1 -name "*.sql.gz" -exec rm -rf {{}} \;
+            """
+        channel.send(rm_file_cmd + "\n")
+        time.sleep(1)
+        log.Logger().info('删除一天前的备份数据')
         for table in tables:
             timestr = time.strftime("%Y%m%d", time.localtime(time.time()))
             backup_file = database[0] + table + timestr
@@ -189,25 +187,25 @@ class MysqlConn():
         log.Logger().info(backup_files)
         return backup_files
 
-
-    def databases_rm(self, rm_time='atime +1'):
+    def databases_rm(self):
         """
         删除备份文件
-        :param rm_time: 日期格式“amin +10”, "atime +1"
+        :param :
         :return:
         """
 
-        linuxPath = self.backup_path
         channel = self.ssh_connect()
-        channel.send('cd {}'.format(linuxPath) + '\n')
-        time.sleep(1)
-        channel.send('find . -a{} -name "*.sql.gz"'.format(rm_time) + "\n")
-        time.sleep(1)
+        time.sleep(2)
         rst = channel.recv(1024).decode('utf-8')
-        log.Logger().info('删除备份文件{}'.format(rst))
-        time.sleep(1)
-        channel.send('find . -a{} -name "*.sql.gz" -delete'.format(rm_time) + '\n')
-
+        log.Logger().info(rst)
+        rm_file_cmd = f"""
+            find {self.backup_path} -mtime +1 -name "*.sql.gz" -exec rm -rf {{}} \;
+            """
+        channel.send(rm_file_cmd + "\n")
+        rst = channel.recv(1024).decode('utf-8')
+        log.Logger().info(rst)
+        log.Logger().info('删除一天前的备份数据')
+        channel.close()
 
     def restore_databases(self, restore_files, wait=8):
         """
@@ -234,9 +232,7 @@ class MysqlConn():
         channel.close()
 
 
-
 if __name__ == '__main__':
-
     #
     # sql = '''INSERT INTO `iems`.`col_task_202202`(`meter_no`, `bar_project_id`, `gmt_create`, `sjsj`, `yxzt`, `sjzt`,
     # `jdqzt`, `axdy`, `bxdy`, `cxdy`, `axdl`, `bxdl`, `cxdl`, `sydl`, `zyggl`, `axyggl`, `bxyggl`, `cxyggl`, `zwggl`,
@@ -257,4 +253,5 @@ if __name__ == '__main__':
     # databases = MysqlConn().read_all_databases()
     # backup_files = MysqlConn().backup_databases(databases, ['wx_user', 'sys_user'])
     # MysqlConn().restore_databases(databases, backup_files)
-    MysqlConn().databases_rm('min +1')
+    channel = MysqlConn().backup_databases(['bar_project'])
+

@@ -1,4 +1,4 @@
-project_name: xxx项目名称
+project_name: iems
 
 env: 测试环境
 # 测试人员名称，作用于自动生成代码的作者，以及发送企业微信、钉钉通知的测试负责人
@@ -11,7 +11,7 @@ app_host:
 
 # 实时更新用例内容，False时，已生成的代码不会在做变更
 # 设置为True的时候，修改yaml文件的用例，代码中的内容会实时更新
-real_time_update_test_cases: False
+real_time_update_test_cases: True
 
 # 报告通知类型：0: 不发送通知 1：钉钉 2：企业微信通知 3、邮箱通知 4、飞书通知
 notification_type: 0
@@ -53,6 +53,9 @@ email:
   stamp_key: rzuabbobadbuhadc
   # 收件人改成自己的邮箱
   send_list: 1603453211@qq.com
+  sender: sbscxylx@163.com
+  password: RDZMJQNVJHKXCJGU
+  receiver: lix@bbieat.com
 
 # 飞书通知
 lark:

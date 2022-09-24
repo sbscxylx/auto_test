@@ -7,7 +7,7 @@ from IemsTestcase import *
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.feature('测试sit计费方案相关')
-class TestIEMSTmpl(unittest.TestCase):
+class TestIemsTmplSit(unittest.TestCase):
     """测试sit项目级相关"""
 
     def check_assert(self, actual, expect):

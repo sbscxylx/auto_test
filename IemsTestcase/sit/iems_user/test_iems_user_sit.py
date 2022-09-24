@@ -7,7 +7,7 @@ from IemsPage.iems_user.iems_user import IEMSUser
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.feature('测试sit用户相关')
-class TestIEMSUser(unittest.TestCase):
+class TestIemsUserSit(unittest.TestCase):
     """测试用户相关"""
 
     def check_assert(self, actual, expect):
@@ -225,6 +225,6 @@ class TestIEMSUser(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    # pytest.main(['-s', '-q', 'test_user_sit.py', '–-alluredir', './report/xml'])
+    # pytest.main(['-s', '-q', 'test_iems_user_sit.py', '–-alluredir', './report/xml'])
     # print(1)
-    # pytest.main(['-–alluredir', './report', 'test_user_sit.py'])
+    # pytest.main(['-–alluredir', './report', 'test_iems_user_sit.py'])

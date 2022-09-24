@@ -41,6 +41,22 @@ def get_all_files(file_name, yaml_data_switch=False) -> list:
     return filename
 
 
+def get_all_dirs(file_name) -> list:
+    """
+    获取该目录下所有子目录
+    :param file_name:
+    :return:
+    """
+    filename = []
+    for root, dirs, files in os.walk(file_name):
+        # print(files)
+        for _dir_path in dirs:
+            path = os.path.join(root, _dir_path)
+            filename.append(path)
+
+    return filename
+
+
 if __name__ == '__main__':
     filepath = ensure_path_sep('/Results/html/data/test-cases')
     print(filepath)
