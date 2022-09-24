@@ -113,5 +113,5 @@ class WeChatSend:
 
 if __name__ == '__main__':
     # print(ensure_path_sep('/Results/html/index.html'))
-    report = WeChatSend(allure_report_data.AllureFileClean().get_case_count()).report('py')
+    report = WeChatSend(allure_report_data.AllureFileClean().get_case_count()).report()
     WeChatSend(allure_report_data.AllureFileClean().get_case_count()).send_wechat_notification(report)
