@@ -1,7 +1,7 @@
 # UIAutoTest
 
 ## 框架介绍
-本框架主要是基于 Python + pytest + unittest + allure + log + yaml + mysql + 企业微信通知 + Jenkins 实现的接口自动化框架。
+本框架主要是基于 Python + pytest + unittest + allure + log + yaml + mysql + 企业微信通知 + Jenkins 实现的UI自动化框架。
 git地址：https://github.com/sbscxylx/auto_test
 项目参与者: 李鑫
 
@@ -111,4 +111,5 @@ git地址：https://github.com/sbscxylx/auto_test
     │  __init__.py
     │  自动化测试方案.docx
         
-## 目录结构
+## 实现逻辑
+C:\Users\Administrator\Desktop\UIAutoTest\自动化测试方案.docx

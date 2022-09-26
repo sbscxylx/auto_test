@@ -18,9 +18,9 @@ def get_case_yaml_automatic(case_yaml) -> None:
                 case_yaml = file_path + case_yaml
                 for test_case in test_cases:
                     test_case_page = test_case_page + f'''{test_case}:
-\tallureStory:
-\tallureTitle:
-\tallureStep: {{}}\n
+    allureStory:
+    allureTitle:
+    allureStep: {{}}\n
 '''
         testcase_template.write_case_yaml(
             case_path=case_yaml,

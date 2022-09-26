@@ -10,7 +10,7 @@ from Conf.yaml_control import GetYamlData
 class TestCaseAutomaticGeneration:
     """自动生成自动化测试中的test_case代码"""
 
-    def __init__(self, env='sit'):
+    def __init__(self, env):
 
         self.env = env
 
@@ -219,7 +219,7 @@ class TestCaseAutomaticGeneration:
         """
         ids = []
         for k, v in test_case.items():
-            if k != "case_common":
+            if 'test' in k:
                 ids.append(k)
         return ids
 
@@ -245,40 +245,53 @@ class TestCaseAutomaticGeneration:
             # 判断代理拦截的yaml文件，不生成test_case代码
             if 'proxy_data.yaml' not in file:
                 # 判断用例需要用的文件夹路径是否存在，不存在则创建
-                self.mk_dir(file)
+
 
                 yaml_case_process = GetYamlData(file).get_yaml_data()
                 log.Logger().info(f'yaml文件数据{yaml_case_process}')
-                case_ids = self.case_ids(yaml_case_process)
-                log.Logger().info(f'用例列表{case_ids}')
 
-                testcase_template.write_testcase_file_start(
-                    allure_severity=self.allure_severity(yaml_case_process, file_path=file),
-                    allure_feature=self.allure_feature(yaml_case_process, file_path=file),
-                    class_title=self.get_test_class_title(file),
-                    case_path=self.get_case_path(file)[0]
-                )
 
-                for case_id in case_ids:
-                    log.Logger().info(f'用例{case_id}')
-                    testcase_template.write_func_file(
-                        case_path=self.get_case_path(file)[0],
-                        allure_story=self.allure_story(yaml_case_process, case_id, file),
-                        allure_title=self.allure_title(yaml_case_process, case_id, file),
-                        allure_step=self.allure_step(yaml_case_process, case_id, file),
-                        func_title=self.func_title(case_id),
-                        login_info='old'
+                if yaml_case_process['is_created'] is False:
+
+                    case_ids = self.case_ids(yaml_case_process)
+                    log.Logger().info(f'用例列表{case_ids}')
+                    self.mk_dir(file)
+
+                    testcase_template.write_testcase_file_start(
+                        allure_severity=self.allure_severity(yaml_case_process, file_path=file),
+                        allure_feature=self.allure_feature(yaml_case_process, file_path=file),
+                        class_title=self.get_test_class_title(file),
+                        case_path=self.get_case_path(file)[0]
                     )
 
-                testcase_template.write_testcase_file_end(
-                    case_path=self.get_case_path(file)[0]
-                )
+                    for case_id in case_ids:
+                        log.Logger().info(f'用例{case_id}')
+                        testcase_template.write_func_file(
+                            case_path=self.get_case_path(file)[0],
+                            allure_story=self.allure_story(yaml_case_process, case_id, file),
+                            allure_title=self.allure_title(yaml_case_process, case_id, file),
+                            allure_step=self.allure_step(yaml_case_process, case_id, file),
+                            func_title=self.func_title(case_id),
+                            login_info='old'
+                        )
 
+                    testcase_template.write_testcase_file_end(
+                        case_path=self.get_case_path(file)[0]
+                    )
+
+
+                    GetYamlData(file).write_yaml_data(key='is_created', value='True')
+
+
+                else:
+                    log.Logger().info(f'该文件{file}已生成过测试用例')
 
 
 if __name__ == '__main__':
-    TestCaseAutomaticGeneration().get_case_automatic()
-    path_file = r'C:\\Users\\Administrator\\Desktop\\UIAutoTest\\data\\collect\\collect_addtool.yaml'
+    TestCaseAutomaticGeneration(env='sit').get_case_automatic()
+
+    # yaml_case_process = GetYamlData(r'C:\Users\Administrator\Desktop\UIAutoTest\data\collect\collect_edittool.yaml').get_yaml_data()
+    # path_file = r'C:\\Users\\Administrator\\Desktop\\UIAutoTest\\data\\collect\\collect_addtool.yaml'
 
     # get_case_path = TestCaseAutomaticGeneration().get_case_path(path_file)
     # print(get_case_path)

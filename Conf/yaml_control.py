@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-# @Time   : 2022/3/28 10:51
-# @Author : 余少琪
-"""
 
 from Comm import *
 import yaml.scanner
@@ -43,8 +39,8 @@ class GetYamlData:
             # 创建了一个空列表，里面没有元素
             lines = []
             for line in file.readlines():
-                if line != '\n':
-                    lines.append(line)
+                # if line != '\n':
+                lines.append(line)
             file.close()
 
         with open(self.file_dir, 'w', encoding='utf-8') as file:
@@ -61,50 +57,6 @@ class GetYamlData:
             file.close()
             return flag
 
-    def circle_yaml_datas(self):
-
-        yaml_datas = self.get_yaml_data()
-
-        # print(yaml_datas)
-        try:
-            _yaml_datas = TestData(**yaml_datas)
-            # print(_yaml_datas)
-        except ValidationError as e:
-            print(e.json())
-
-        return _yaml_datas
-
-
-        # yaml_datas_list = {k: v for k, v in _yaml_datas[key].items()}
-        # print(_yaml_datas.projetc_data)
-
-
-class GetCaseData(GetYamlData):
-    """ 获取测试用例中的数据 """
-
-    def get_different_formats_yaml_data(self) -> list:
-        """
-        获取兼容不同格式的yaml数据
-        :return:
-        """
-        res_list = []
-        for i in self.get_yaml_data():
-            res_list.append(i)
-        return res_list
-
-    # def get_yaml_case_data(self):
-    #     """
-    #     获取测试用例数据, 转换成指定数据格式
-    #     :return:
-    #     """
-    #
-    #     _yaml_data = self.get_yaml_data()
-    #     # 正则处理yaml文件中的数据
-    #     re_data = regular(str(_yaml_data))
-    #     return ast.literal_eval(re_data)
-
 
 if __name__ == '__main__':
-    # a = GetYamlData(ensure_path_sep("/IemsTestcase/Testdata/test_data.yaml")).get_yaml_data()
-    b = GetYamlData(ensure_path_sep("/IemsTestcase/Testdata/test_data.yaml")).circle_yaml_datas()
-    print(b.project_data.bar_project_name)
+    GetYamlData(get_path.ensure_path_sep('\\data\\collect\\collect_edittool.yaml')).write_yaml_data(key='is_created', value='True')

@@ -133,6 +133,8 @@ def write_case_yaml(case_path, allureSeverity, allureFeature, test_case):
     """
 
     case_yaml = f'''# 公共参数
+is_created: False
+
 case_common:
     allureSeverity: {allureSeverity}
     allureFeature: {allureFeature}

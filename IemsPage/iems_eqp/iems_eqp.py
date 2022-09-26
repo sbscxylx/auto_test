@@ -475,11 +475,6 @@ class IEMSEquipment(BasePage):
         log.Logger().info('成功删除')
 
 
-
-
-
-
-
 if __name__ == '__main__':
     from IemsPage.iems_login.iems_login import IemsLogin
 

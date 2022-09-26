@@ -6,7 +6,7 @@ from Comm import *
 
 
 
-def run(filename='\\IemsTestcase'):
+def run(filename='\\IemsTestcase\\sit'):
     """
 
     :param filename:
@@ -31,7 +31,8 @@ def run(filename='\\IemsTestcase'):
                 """
         )
 
-        # os.system(f"python -m pytest {filename}")
+        filename = get_path.ensure_path_sep(filename)
+        os.system(f"python -m pytest {filename}")
 
         """
                    --reruns: 失败重跑次数
@@ -46,7 +47,7 @@ def run(filename='\\IemsTestcase'):
                     fi
                    """
 
-        # os.system(r"allure generate ./Results/allure_reports -o ./Results/html --clean")
+        os.system(r"allure generate ./Results/allure_reports -o ./Results/html --clean")
 
 
         allure_data = allure_report_data.AllureFileClean().get_case_count()
@@ -76,5 +77,6 @@ def run(filename='\\IemsTestcase'):
 if __name__ == '__main__':
     filename = f'/IemsTestcase/sit/iems_project/test_iems_project_sit.py::TestIemsProjectSit::test_01_add_project'
     filename = get_path.ensure_path_sep(filename)
-    run(filename)
+    # run(filename)
     # os.system(f"allure serve ./Results/allure_reports -h 127.0.0.1 -p 9999")
+    run(filename)

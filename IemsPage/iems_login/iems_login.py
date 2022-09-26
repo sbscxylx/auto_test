@@ -34,9 +34,6 @@ class IemsLogin(BasePage):
                     break
         except:
             pass
-        log.Logger().info('2.0登录成功')
-        sleep(1)
-
 
 
     def iems_login_new(self, user, pwd, url=sit_url_new):
@@ -122,6 +119,6 @@ class IemsLogin(BasePage):
 
 if __name__ == '__main__':
     b = Base('c')
+    IemsLogin(b).iems_login_old(user='admin1', pwd='admin')
     # IemsLogin(b).iems_login_old(user='admin1', pwd='admin')
-    # IemsLogin(b).iems_login_old(user='admin1', pwd='admin')
-    IemsLogin(b).a_login_new('admin', '9999#hz')
+    # IemsLogin(b).a_login_new('admin', '9999#hz')
