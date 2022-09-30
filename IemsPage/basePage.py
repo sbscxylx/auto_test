@@ -207,7 +207,7 @@ class Base:
         WebDriverWait(self.driver, timeout, poll_frequency).until(method)
         self.sleep(0.5)
 
-    def isPresent(self, selector):
+    def isPresent(self, selector, timeout=20):
         """
         存在的元素返回True;不存在的元素返回False
         :param selector:
@@ -215,6 +215,7 @@ class Base:
         """
 
         try:
+            self.wait_until(timeout=timeout, selector=selector)
             self.get_element(selector)
             return True
         except:
@@ -325,6 +326,8 @@ class Base:
 
         if keys == 'enter':
             self.get_element(selector).send_keys(Keys.ENTER)
+        if keys == 'esc':
+            self.get_element(selector).send_keys(Keys.ESCAPE)
 
 
 class BasePage:

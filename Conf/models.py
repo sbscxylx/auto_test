@@ -91,6 +91,8 @@ class MeasureData(BaseModel):
     barMeasureNO: list
     commType: list
     gatewayNo: list
+    collertorNo: list
+    commProto: list
 
 
 class Config(BaseModel):

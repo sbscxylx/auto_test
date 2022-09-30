@@ -1,5 +1,5 @@
 project_data:
-  bar_project_name: [新IEMS系统演示, 发布回归, 和达高科, 新增项目]
+  bar_project_name: [新IEMS系统演示, 发布回归, 和达高科-旧, 新增项目]
   Address: 建友科创园
   direct: 工程负责人
   directMobile: '15000000000'
@@ -21,6 +21,8 @@ user_data:
 measure_data:
   barMeasureNO: ['202206010001', '202206010002', '202206010003', '202206010004']
   commType: ['GPRS/4G', '电信NB-IoT', '485']
-  gatewayNo: ['20220603']
+  gatewayNo: ['20220603', '20220531']
+  collertorNo: ['202205310001']
+  commProto: ['DLT645-2007版电能表规约', 'DLT645-1997版电能表规约']
 
 

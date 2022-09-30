@@ -1,0 +1,44 @@
+# 公共参数
+is_created: True
+
+case_common:
+    allureSeverity: CRITICAL
+    allureFeature: 测试采集器配置
+    backupFile: [bar_measure, bar_collector_archive, bar_collector_archive_detail, bar_collector_parameter,
+                 bar_collector_task_info, bar_collector_task_log, bar_collector_task_template]
+
+test_import_collector_01:
+    allureStory: 采集器配置
+    allureTitle: 正常导入采集器配置文件
+    allureStep: {step1: 进入【基础信息-设备信息-采集器配置】, step2: 选择项目, step3: 查找376网关号, step4: 点击档案配置,
+                 step5: 导入376采集器档案模板, step6: 核对数据}
+
+test_import_collector_02:
+    allureStory: 采集器配置
+    allureTitle: 导入同一表号不同端口号
+    allureStep: {step1: 导入376采集器档案模板, step2: 核对数据}
+
+test_import_collector_03:
+    allureStory: 采集器配置
+    allureTitle: 导入同一项目下已绑定网关的表计
+    allureStep: {step1: 导入设备, step2: 导入376采集器档案模板, step3: 核对数据}
+
+test_import_collector_04:
+    allureStory: 采集器配置
+    allureTitle: 导入不同项目下未绑定网关的表计
+    allureStep: {step1: 导入376采集器档案模板, step2: 核对数据}
+
+test_import_collector_05:
+    allureStory: 采集器配置
+    allureTitle: 导入系统里不存在的表计
+    allureStep: {step1: 导入376采集器档案模板, step2: 核对数据}
+
+test_import_collector_06:
+    allureStory: 采集器配置
+    allureTitle: 导入系统里不存在的表计
+    allureStep: { step1: 导入376采集器档案模板, step2: 核对数据 }
+
+test_import_collector_07:
+    allureStory: 采集器配置
+    allureTitle: 测量点档案最多导入128个
+    allureStep: {step1: 切换项目, step2: 导入376采集器档案模板, step3: 核对数据 }

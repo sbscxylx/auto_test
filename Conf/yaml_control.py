@@ -59,4 +59,4 @@ class GetYamlData:
 
 
 if __name__ == '__main__':
-    GetYamlData(get_path.ensure_path_sep('\\data\\collect\\collect_edittool.yaml')).write_yaml_data(key='is_created', value='True')
+    GetYamlData(get_path.ensure_path_sep('\\data\\collect\\collect_edit.yaml')).write_yaml_data(key='is_created', value='True')

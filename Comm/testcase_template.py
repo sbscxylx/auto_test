@@ -11,9 +11,10 @@ def write_case(case_path, page):
 
 
 def write_testcase_file_start(*, allure_severity, allure_feature, class_title,
-                              case_path):
+                              backup_tables, case_path):
     """
         编写用例前面部分
+        :param backup_tables: 数据库备份
         :param allure_severity: 用例级别
         :param allure_feature: 模块名称
         :param class_title: 类名称
@@ -31,6 +32,7 @@ def write_testcase_file_start(*, allure_severity, allure_feature, class_title,
 from IemsPage.iems_eqp.iems_eqp import IEMSEquipment
 from IemsPage.iems_login.iems_login import IemsLogin
 from IemsPage.iems_project.iems_project import IEMSProject
+from IemsPage.iems_collector.iems_collector import IEMSCollector
 from IemsTestcase import *
 
 
@@ -52,7 +54,7 @@ class {class_title}(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
 
-        cls.backup_files = mysql_backup.MysqlConn().backup_databases(['bar_project'])
+        cls.backup_files = mysql_backup.MysqlConn().backup_databases({backup_tables})
         cls.login = TestData.login_data
         cls.project = TestData.project_data
         log.Logger().info(f'登录信息{{cls.login}}')
@@ -81,7 +83,9 @@ def write_func_file(case_path, allure_story, allure_title, allure_step, func_tit
     """
 
     func_page = f'''
+    @unittest.skip('xx')
     @Screen
+    @allure.severity("allure.severity_level.")
     @allure.story("{allure_story}")
     @allure.title("{allure_title}")
     def {func_title}(self):
@@ -125,9 +129,9 @@ if __name__ == '__main__':
     write_case(case_path=case_path, page=end_page)
 
 
-def write_case_yaml(case_path, allureSeverity, allureFeature, test_case):
+def write_case_yaml(case_path, test_case):
     """
-
+    :param test_case:
     :param case_path:
     :return:
     """
@@ -136,8 +140,10 @@ def write_case_yaml(case_path, allureSeverity, allureFeature, test_case):
 is_created: False
 
 case_common:
-    allureSeverity: {allureSeverity}
-    allureFeature: {allureFeature}
+    # BLOCKER,CRITICAL,NORMAL,MINOR,TRIVIAL
+    allureSeverity:
+    allureFeature:
+    backupFile: []
 
 {test_case}
 '''

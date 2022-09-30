@@ -98,6 +98,23 @@ class TestCaseAutomaticGeneration:
         return case_id
 
     @staticmethod
+    def backup_file(case_data: Dict, file_path) -> Text:
+        """
+        用于备份数据库文件的表
+        :param file_path: 用例路径
+        :param case_data: 用例数据
+        :return:
+        """
+        try:
+            log.Logger().info(f"备份数据库文件的表{case_data['case_common']['backupFile']}")
+            return case_data['case_common']['backupFile']
+        except KeyError as exc:
+            raise ValueNotFoundError(TestCaseAutomaticGeneration.error_message(
+                param_name="backupFile",
+                file_path=file_path
+            )) from exc
+
+    @staticmethod
     def allure_severity(case_data: Dict, file_path) -> Text:
         """
         用于 allure 报告装饰器中的内容 @allure.severity("")
@@ -170,7 +187,7 @@ class TestCaseAutomaticGeneration:
     @staticmethod
     def allure_step(case_data: Dict, case_id, file_path) -> Text:
         """
-
+        用例步骤
         :param case_data:
         :param case_id:
         :param file_path:
@@ -261,6 +278,7 @@ class TestCaseAutomaticGeneration:
                         allure_severity=self.allure_severity(yaml_case_process, file_path=file),
                         allure_feature=self.allure_feature(yaml_case_process, file_path=file),
                         class_title=self.get_test_class_title(file),
+                        backup_tables=self.backup_file(yaml_case_process, file_path=file),
                         case_path=self.get_case_path(file)[0]
                     )
 
@@ -290,8 +308,8 @@ class TestCaseAutomaticGeneration:
 if __name__ == '__main__':
     TestCaseAutomaticGeneration(env='sit').get_case_automatic()
 
-    # yaml_case_process = GetYamlData(r'C:\Users\Administrator\Desktop\UIAutoTest\data\collect\collect_edittool.yaml').get_yaml_data()
-    # path_file = r'C:\\Users\\Administrator\\Desktop\\UIAutoTest\\data\\collect\\collect_addtool.yaml'
+    # yaml_case_process = GetYamlData(r'C:\Users\Administrator\Desktop\UIAutoTest\data\collect\collect_edit.yaml').get_yaml_data()
+    # path_file = r'C:\\Users\\Administrator\\Desktop\\UIAutoTest\\data\\collect\\collect_import.yaml'
 
     # get_case_path = TestCaseAutomaticGeneration().get_case_path(path_file)
     # print(get_case_path)
